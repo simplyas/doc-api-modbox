@@ -1,6 +1,6 @@
 # Configurações
 
-- [Lista Configurações](https://gist.github.com/mmprestes/651414f9abaae61dd479a8c74357d0c0#lista-configura%C3%A7%C3%B5es)
+- [Lista Configurações](Settings.md#lista-configura%C3%A7%C3%B5es)
 
 ----
 <br/>
