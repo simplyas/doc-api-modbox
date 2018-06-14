@@ -1,6 +1,6 @@
 # Terminais
 
-- [Lista Terminais](https://gist.github.com/mmprestes/97568ad3a621d5a4d4c98b9eafe7933a#lista-terminais)
+- [Lista Terminais](Terminals.md#lista-terminais)
 
 ----
 <br/>
