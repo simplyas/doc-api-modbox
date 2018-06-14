@@ -32,7 +32,7 @@ Algumas informações antes de começarmos.
 * [Logs dos aplicativos](Logs.md)
 
 ### Mod WIFI
-* [Compartilhamento Internet](https://gist.github.com/mmprestes/1ed6ac7767022c99f47a37fca34e4966)
+* [Compartilhamento Internet](ModWifi.md)
 ### Mod TV
 * [Programação (Playlists)](https://gist.github.com/mmprestes/e339a0cc7de14e6032fc4d0d454f5a08)
 * [Relógios](https://gist.github.com/e19e9c59031980a53eb86d1f1aeb9980)
