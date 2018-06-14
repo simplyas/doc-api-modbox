@@ -4,13 +4,13 @@ Etapa inicial, primeiro crie um usuário em seguida o contrato informando o toke
 
 Guarde em um local seguro os atributos "user_token" e "contract_hash" pois eles serão utilizados em quase todas as operações para validação. O "user_token" é renovado todas as vezes que acontece troca de senha.
 
-- [Autenticação](https://gist.github.com/mmprestes/339e463e596f897be314c8008fc81bef#-autentica%C3%A7%C3%A3o-)
- - [Cadastra Usuário](https://gist.github.com/mmprestes/339e463e596f897be314c8008fc81bef#cadastra-usu%C3%A1rio)
-- [Atualiza Usuário](https://gist.github.com/mmprestes/339e463e596f897be314c8008fc81bef#atualiza-usu%C3%A1rio)
-- [Lista Permissões](https://gist.github.com/mmprestes/339e463e596f897be314c8008fc81bef#lista-permiss%C3%B5es)
-- [Nova Permissão](https://gist.github.com/mmprestes/339e463e596f897be314c8008fc81bef#nova-permiss%C3%A3o)
-- [Atualiza Permissão](https://gist.github.com/mmprestes/339e463e596f897be314c8008fc81bef#atualiza-permiss%C3%A3o)
-- [Deleta Permissão](https://gist.github.com/mmprestes/339e463e596f897be314c8008fc81bef#deleta-permiss%C3%A3o)
+- [Autenticação](Cadauth.md#-autentica%C3%A7%C3%A3o-)
+ - [Cadastra Usuário](Cadauth.md#cadastra-usu%C3%A1rio)
+- [Atualiza Usuário](Cadauth.md#atualiza-usu%C3%A1rio)
+- [Lista Permissões](Cadauth.md#lista-permiss%C3%B5es)
+- [Nova Permissão](Cadauth.md#nova-permiss%C3%A3o)
+- [Atualiza Permissão](Cadauth.md#atualiza-permiss%C3%A3o)
+- [Deleta Permissão](Cadauth.md#deleta-permiss%C3%A3o)
 ----
 <br/>
 
