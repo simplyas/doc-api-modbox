@@ -2,10 +2,10 @@
 
 Este recurso permite gestão de grupos para organização dos recursos no sistema.
 
-- [Lista Grupos](https://gist.github.com/mmprestes/a3ec3f3fb5ca622f5f2c1ebb4d3cfebc#lista-grupos)
-- [Novo Grupo](https://gist.github.com/mmprestes/a3ec3f3fb5ca622f5f2c1ebb4d3cfebc#novo-grupo)
-- [Atualiza Grupo](https://gist.github.com/mmprestes/a3ec3f3fb5ca622f5f2c1ebb4d3cfebc#atualiza-grupo)
-- [Deleta Grupo](https://gist.github.com/mmprestes/a3ec3f3fb5ca622f5f2c1ebb4d3cfebc#deleta-grupo)
+- [Lista Grupos](Goups.md#lista-grupos)
+- [Novo Grupo](Goups.md#novo-grupo)
+- [Atualiza Grupo](Goups.md#atualiza-grupo)
+- [Deleta Grupo](Goups.md#deleta-grupo)
 ----
 <br/>
 
