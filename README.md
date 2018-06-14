@@ -34,13 +34,13 @@ Algumas informações antes de começarmos.
 ### Mod WIFI
 * [Compartilhamento Internet](ModWIFI.md)
 ### Mod TV
-* [Programação (Playlists)](https://gist.github.com/mmprestes/e339a0cc7de14e6032fc4d0d454f5a08)
-* [Relógios](https://gist.github.com/e19e9c59031980a53eb86d1f1aeb9980)
-* [Mensagens](https://gist.github.com/mmprestes/05af1c01d555257a7377377533f89cee)	
-* [Logomarcas](https://gist.github.com/a4dd40b926d3ed325a029a5f38781674)
+* [Programação (Playlists)](Playlists.md)
+* [Relógios](Clocks.md)
+* [Mensagens](Messages.md)	
+* [Logomarcas](Logotypes.md)
 
 ### Agendamento de Recursos
-* [Agendamento](https://gist.github.com/mmprestes/0fdef5542d39bfab9568a524b5e1c961)
+* [Agendamento](Resources.md)
 
 
 
