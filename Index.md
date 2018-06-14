@@ -22,8 +22,8 @@ Algumas informações antes de começarmos.
 ### Cadastro e autenticação
 * [Contratos](Contratos.md)
 * [Autenticação](Cadauth.md#-autentica%C3%A7%C3%A3o-)
-* [Usuários](https://gist.github.com/mmprestes/339e463e596f897be314c8008fc81bef#cadastra-usu%C3%A1rio)
-* [Permissões](https://gist.github.com/mmprestes/339e463e596f897be314c8008fc81bef#lista-permiss%C3%B5es)
+* [Usuários](Cadauth.md#cadastra-usu%C3%A1rio)
+* [Permissões](Cadauth.md#lista-permiss%C3%B5es)
 
 ### Equipamentos e aplicativos
 * [Grupos](https://gist.github.com/mmprestes/a3ec3f3fb5ca622f5f2c1ebb4d3cfebc)
