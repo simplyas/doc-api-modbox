@@ -4,9 +4,9 @@
 
 Lista os contratos do parceiro. Recebe requisição contendo dados para cadastro (incluindo o usuário administrador) ou atualiza as informações do contrato. Retorna a licença e a hash do contrato criado.
 
-- [Lista Contratos](https://gist.github.com/mmprestes/359963067ff4875465f4ffee6fed00ec#lista-contratos)
-- [Novo Contrato](https://gist.github.com/mmprestes/359963067ff4875465f4ffee6fed00ec#novo-contrato)
-- [Atualiza Contrato](https://gist.github.com/mmprestes/359963067ff4875465f4ffee6fed00ec#atualiza-contrato)
+- [Lista Contratos](Contratos.md#lista-contratos)
+- [Novo Contrato](Contratos.md#novo-contrato)
+- [Atualiza Contrato](Contratos.md#atualiza-contrato)
 
 ----
 <br/>
