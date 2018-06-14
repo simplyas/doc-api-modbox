@@ -30,6 +30,7 @@ Algumas informações antes de começarmos.
 * [Configurações](Settings.md)
 * [Terminais](Terminals.md)
 * [Logs dos aplicativos](Logs.md)
+* [Métricas](Metrics.md)
 
 ### Mod WIFI
 * [Compartilhamento Internet](ModWIFI.md)
