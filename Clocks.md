@@ -2,10 +2,10 @@
 
 Este recurso permite aos equipamentos Modbox exibir um relógio personalizado na tela.
 
-- [Lista Relógios](https://gist.github.com/mmprestes/e19e9c59031980a53eb86d1f1aeb9980#lista-rel%C3%B3gios)
-- [Novo Relógio](https://gist.github.com/mmprestes/e19e9c59031980a53eb86d1f1aeb9980#novo-rel%C3%B3gio)
-- [Atualiza Relógio](https://gist.github.com/mmprestes/e19e9c59031980a53eb86d1f1aeb9980#atualiza-rel%C3%B3gio)
-- [Deleta Relógio](https://gist.github.com/mmprestes/e19e9c59031980a53eb86d1f1aeb9980#deleta-rel%C3%B3gio)
+- [Lista Relógios](Clocks.md#lista-rel%C3%B3gios)
+- [Novo Relógio](Clocks.md#novo-rel%C3%B3gio)
+- [Atualiza Relógio](Clocks.md#atualiza-rel%C3%B3gio)
+- [Deleta Relógio](Clocks.md#deleta-rel%C3%B3gio)
 ----
 <br/>
 
