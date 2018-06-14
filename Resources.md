@@ -2,10 +2,10 @@
 
 Este recurso permite definir agendamento para todos os módulos do Modbox. 
 
-- [Lista Recursos](https://gist.github.com/mmprestes/0fdef5542d39bfab9568a524b5e1c961#lista-recursos)
-- [Novo Recurso](https://gist.github.com/mmprestes/0fdef5542d39bfab9568a524b5e1c961#novo-recurso)
-- [Atualiza Recurso](https://gist.github.com/mmprestes/0fdef5542d39bfab9568a524b5e1c961#atualiza-recurso)
-- [Deleta Recurso](https://gist.github.com/mmprestes/0fdef5542d39bfab9568a524b5e1c961#deleta-recurso)
+- [Lista Recursos](Resources.md#lista-recursos)
+- [Novo Recurso](Resources.md#novo-recurso)
+- [Atualiza Recurso](Resources.md#atualiza-recurso)
+- [Deleta Recurso](Resources.md#deleta-recurso)
 ----
 <br/>
 
