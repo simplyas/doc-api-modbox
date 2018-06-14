@@ -20,7 +20,7 @@ Algumas informações antes de começarmos.
 -   Chave da API:  [https://modbox.simplyas.com/configDeveloper](https://modbox.simplyas.com/configDeveloper)
 ---
 ### Cadastro e autenticação
-* [Contratos](https://github.com/simplyas/API/blob/master/Contratos.md)
+* [Contratos](Contratos.md)
 * [Autenticação](https://gist.github.com/mmprestes/339e463e596f897be314c8008fc81bef#-autentica%C3%A7%C3%A3o-)
 * [Usuários](https://gist.github.com/mmprestes/339e463e596f897be314c8008fc81bef#cadastra-usu%C3%A1rio)
 * [Permissões](https://gist.github.com/mmprestes/339e463e596f897be314c8008fc81bef#lista-permiss%C3%B5es)
