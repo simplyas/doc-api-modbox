@@ -2,10 +2,10 @@
 
 Este recurso permite aos equipamentos Modbox exibir programação personalizada em vídeo na TV.
 
-- [Lista Playlist](https://gist.github.com/mmprestes/e339a0cc7de14e6032fc4d0d454f5a08#lista-playlists)
-- [Nova Playlist](https://gist.github.com/mmprestes/e339a0cc7de14e6032fc4d0d454f5a08#nova-playlist)
-- [Atualiza Playlist](https://gist.github.com/mmprestes/e339a0cc7de14e6032fc4d0d454f5a08#atualiza-playlist)
-- [Deleta Playlist](https://gist.github.com/mmprestes/e339a0cc7de14e6032fc4d0d454f5a08#deleta-playlist)
+- [Lista Playlist](Playlists.md#lista-playlists)
+- [Nova Playlist](Playlists.md#nova-playlist)
+- [Atualiza Playlist](Playlists.md#atualiza-playlist)
+- [Deleta Playlist](Playlists.md#deleta-playlist)
 ----
 <br/>
 
