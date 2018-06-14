@@ -26,10 +26,10 @@ Algumas informações antes de começarmos.
 * [Permissões](Cadauth.md#lista-permiss%C3%B5es)
 
 ### Equipamentos e aplicativos
-* [Grupos](https://gist.github.com/mmprestes/a3ec3f3fb5ca622f5f2c1ebb4d3cfebc)
-* [Configurações](https://gist.github.com/mmprestes/651414f9abaae61dd479a8c74357d0c0)
-* [Terminais](https://gist.github.com/mmprestes/97568ad3a621d5a4d4c98b9eafe7933a)
-* [Logs dos aplicativos](https://gist.github.com/mmprestes/97568ad3a621d5a4d4c98b9eafe7933a)
+* [Grupos](Groups.md)
+* [Configurações](Settings.md)
+* [Terminais](Terminals.md)
+* [Logs dos aplicativos](Logs.md)
 
 ### Mod WIFI
 * [Compartilhamento Internet](https://gist.github.com/mmprestes/1ed6ac7767022c99f47a37fca34e4966)
