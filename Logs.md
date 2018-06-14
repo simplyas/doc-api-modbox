@@ -51,7 +51,7 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de terminais 
 	
 	````curl
 	curl --request POST \
-  --url 'http://{{api-url}}/requestTerminals' \
+  --url 'http://{{api-url}}/requestData' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
   --data '{"contract_hash":"{{contract_hash}}","module":"{{module}}","date_ini":"{{date_ini}}","date_end":"{{date_end}}","terminal_token":"{{terminal_token}}"}'
