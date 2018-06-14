@@ -5,7 +5,7 @@ Etapa inicial, primeiro crie um usuário em seguida o contrato informando o toke
 Guarde em um local seguro os atributos "user_token" e "contract_hash" pois eles serão utilizados em quase todas as operações para validação. O "user_token" é renovado todas as vezes que acontece troca de senha.
 
 - [Autenticação](Cadauth.md#-autentica%C3%A7%C3%A3o-)
- - [Cadastra Usuário](Cadauth.md#cadastra-usu%C3%A1rio)
+- [Cadastra Usuário](Cadauth.md#cadastra-usu%C3%A1rio)
 - [Atualiza Usuário](Cadauth.md#atualiza-usu%C3%A1rio)
 - [Lista Permissões](Cadauth.md#lista-permiss%C3%B5es)
 - [Nova Permissão](Cadauth.md#nova-permiss%C3%A3o)
