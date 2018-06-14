@@ -4,10 +4,10 @@ Este recurso permite aos equipamentos modbox habilitar o compartilhamento de Int
 
 Todos os equipamentos participantes do mesmo grupo que tenha este recurso habilitado, irão criar uma única rede Wi-Fi expandindo a área de cobertura do sinal.
 
-- [Lista Redes](https://gist.github.com/mmprestes/1ed6ac7767022c99f47a37fca34e4966#lista-redes)
-- [Nova Rede](https://gist.github.com/mmprestes/1ed6ac7767022c99f47a37fca34e4966#nova-rede)
-- [Atualiza Rede](https://gist.github.com/mmprestes/1ed6ac7767022c99f47a37fca34e4966#atualiza-rede)
-- [Deleta Rede](https://gist.github.com/mmprestes/1ed6ac7767022c99f47a37fca34e4966#delete-rede)
+- [Lista Redes](ModWIFI.md#lista-redes)
+- [Nova Rede](ModWIFI.md#nova-rede)
+- [Atualiza Rede](ModWIFI.md#atualiza-rede)
+- [Deleta Rede](ModWIFI.md#delete-rede)
 ----
 <br/>
 
