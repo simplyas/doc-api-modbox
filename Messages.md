@@ -2,10 +2,10 @@
 
 Este recurso permite aos equipamentos Modbox exibir mensagens personalizadas (avisos curtos) na tela.
 
-- [Lista Mensagens](https://gist.github.com/mmprestes/05af1c01d555257a7377377533f89cee#lista-mensagens)
-- [Nova Mensagem](https://gist.github.com/mmprestes/05af1c01d555257a7377377533f89cee#nova-mensagem)
-- [Atualiza Mensagem](https://gist.github.com/mmprestes/05af1c01d555257a7377377533f89cee#atualiza-mensagem)
-- [Deleta Mensagem](https://gist.github.com/mmprestes/05af1c01d555257a7377377533f89cee#deleta-mensagem)
+- [Lista Mensagens](Messages.md#lista-mensagens)
+- [Nova Mensagem](Messages.md#nova-mensagem)
+- [Atualiza Mensagem](Messages.md#atualiza-mensagem)
+- [Deleta Mensagem](Messages.md#deleta-mensagem)
 ----
 <br/>
 
