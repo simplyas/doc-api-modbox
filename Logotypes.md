@@ -2,10 +2,10 @@
 
 Este recurso permite aos equipamentos Modbox exibir um relógio personalizado na tela.
 
-- [Lista Logomarcas](https://gist.github.com/mmprestes/a4dd40b926d3ed325a029a5f38781674#lista-logomarcas)
-- [Nova Logomarca](https://gist.github.com/mmprestes/a4dd40b926d3ed325a029a5f38781674#nova-logomarca)
-- [Atualiza Logomarca](https://gist.github.com/mmprestes/a4dd40b926d3ed325a029a5f38781674#atualiza-logomarca)
-- [Deleta Logomarca](https://gist.github.com/mmprestes/a4dd40b926d3ed325a029a5f38781674#deleta-logomarca)
+- [Lista Logomarcas](Logotypes.md#lista-logomarcas)
+- [Nova Logomarca](Logotypes.md#nova-logomarca)
+- [Atualiza Logomarca](Logotypes.md#atualiza-logomarca)
+- [Deleta Logomarca](Logotypes.md#deleta-logomarca)
 ----
 <br/>
 
