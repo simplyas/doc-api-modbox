@@ -1,4 +1,4 @@
-# Arquivos
+# Arquivos de mídia
 
 - [Lista Arquivos](Files.md#lista-arquivos)
 
