@@ -1,7 +1,6 @@
 # Canais de Conteúdo
 
-- [Lista Canais de Conteúdo](Contents.md#lista-m%C3%ADdias-online
-)
+- [Lista Canais de Conteúdo](Contents.md#lista-canais-de-conte%C3%BAdo)
 
 ----
 <br/>
