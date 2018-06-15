@@ -45,6 +45,6 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de arquivos d
   --url 'http://{{api-url}}/requestFiles' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","terminal_token":"{{terminal_token}}"}
+  --data '{"contract_hash":"{{contract_hash}}"}
   ```` 
 
