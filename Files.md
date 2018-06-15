@@ -7,7 +7,7 @@
 
 **Lista Arquivos**
 ----
-Recebe requisição contendo a hash do contrato. Retorna uma lista de arquivos da biblioteca.
+Recebe requisição contendo a hash do contrato. Retorna uma lista de arquivos de mídia da biblioteca.
 
 * **URL**
 
