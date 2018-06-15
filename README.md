@@ -39,6 +39,7 @@ Algumas informações antes de começarmos.
 * [Relógios](Clocks.md)
 * [Mensagens](Messages.md)	
 * [Logomarcas](Logotypes.md)
+* [Arquivos de mídia](Files.md)
 
 ### Agendamento de Recursos
 * [Agendamento](Resources.md)
