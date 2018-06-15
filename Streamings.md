@@ -1,11 +1,11 @@
-# Mídia online
+# Mídias Online
 
 - [Lista Mídias Online](Streamings.md#lista-arquivos)
 
 ----
 <br/>
 
-**Lista mídias Online**
+**Lista Mídias Online**
 ----
 Recebe requisição contendo a hash do contrato. Retorna uma lista de mídias online da biblioteca.
 
