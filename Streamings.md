@@ -1,6 +1,7 @@
 # Mídias Online
 
-- [Lista Mídias Online](Streamings.md#lista-arquivos)
+- [Lista Mídias Online](Streamings.md#m%C3%ADdias-online
+)
 
 ----
 <br/>
