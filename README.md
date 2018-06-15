@@ -40,8 +40,8 @@ Algumas informações antes de começarmos.
 * [Mensagens](Messages.md)	
 * [Logomarcas](Logotypes.md)
 * [Arquivos de mídia](Files.md)
-* [Mídias online](Streamings.md)
-* [Conteúdos](Contents.md)
+* [Mídias Online](Streamings.md)
+* [Canais de Conteúdos](Contents.md)
 
 ### Agendamento de Recursos
 * [Agendamento](Resources.md)
