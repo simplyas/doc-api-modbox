@@ -36,7 +36,7 @@ Retorna uma lista de playlists e suas configurações.
 	
 	|Código| Resposta |
 	|--|--|
-	| 200 | ```{"label": "playlist 1000","playlist_token": "1602f718-910c-4a44-91c4-da60c606ce2c","random": "False","looping": "True","mute": "False","duration_live": "","instagram": "","rss": "","orientation": "0","led": "False","videowall": "False","files": [{"file_name": "Cotações","token": "5bf99754-b591-4ce8-a217-1a2d0040c272","md5": "","description": "","creation_date": "","duration": "","url": "","image": "5bf99754-b591-4ce8-a217-1a2d0040c272","type": "content"}],"terminals": ['06-00-00-00-00-00','06-00-00-00-00-00']}}``` |
+	| 200 | ```{"label": "playlist 1000","playlist_token": "1602f718-910c-4a44-91c4-da60c606ce2c","random": "False","looping": "True","mute": "False","duration_live": "","instagram": "","rss": "","orientation": "0","led": "False","videowall": "False","files": ["5bf99754-b591-4ce8-a217-1a2d0040c272","5bf99754-b591-4ce8-a217-1a2d0040c272"],"terminals": ['06-00-00-00-00-00','06-00-00-00-00-00']}}``` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
@@ -86,7 +86,7 @@ Retorna uma lista de playlists e suas configurações.
 	| duration_live | Opcional |  |
 	| instagram | Opcional |  |
 	| rss | Opcional |  |
-	| files | Opcional | Lista de arquivos ``` [{"file_name": "Cotações","token": "5bf99754-b591-4ce8-a217-1a2d0040c272","md5": "","description": "","creation_date": "","duration": "","url": "","image": "5bf99754-b591-4ce8-a217-1a2d0040c272","type": "content"}] ``` |
+	| files | Opcional | Lista de arquivos ``` [["5bf99754-b591-4ce8-a217-1a2d0040c272","5bf99754-b591-4ce8-a217-1a2d0040c272"]] ``` |
 	| terminals | Opcional | Lista de mac address de terminais para o videowall  ``` ["06-00-00-00-00-00","06-00-00-00-00-00"] ``` |
 	| language | Opcional |  |
 
@@ -110,7 +110,7 @@ Retorna uma lista de playlists e suas configurações.
   --url 'http://{{api-url}}/submitPlaylist' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","label": "{{label}}", "random": "{{random}}","looping": "{{looping}}","mute": "{{mute}}","duration_live": "{{duration_live}}","instagram": "{{instagram}}","rss": "{{rss}}","orientation": "{{orientation}}","led": "{{led}}", "videowall": "{{videowall}}", "files": [{"file_name": "{{file_name}}","token": "{{token}}","md5": "{{md5}}","description": "{{description}}","creation_date": "{{creation_date}}","duration": "{{duration}}","url": "{{url}}","image": "{{image}}","type": "{{type}}"}],"terminals": ["{{mac_address}}"],"language":"{{language}}"}'````
+  --data '{"contract_hash":"{{contract_hash}}","label": "{{label}}", "random": "{{random}}","looping": "{{looping}}","mute": "{{mute}}","duration_live": "{{duration_live}}","instagram": "{{instagram}}","rss": "{{rss}}","orientation": "{{orientation}}","led": "{{led}}", "videowall": "{{videowall}}", "files": [{{file_name}}],"terminals": ["{{mac_address}}"],"language":"{{language}}"}'````
 
 <br/>
 
@@ -146,7 +146,7 @@ Retorna uma lista de playlists e suas configurações.
 	| duration_live | Opcional |  |
 	| instagram | Opcional |  |
 	| rss | Opcional |  |
-	| files | Opcional | Lista de arquivos ``` [{"file_name": "Cotações","token": "5bf99754-b591-4ce8-a217-1a2d0040c272","md5": "","description": "","creation_date": "","duration": "","url": "","image": "5bf99754-b591-4ce8-a217-1a2d0040c272","type": "content"}] ``` |
+	| files | Opcional | Lista de arquivos ``` [["5bf99754-b591-4ce8-a217-1a2d0040c272","5bf99754-b591-4ce8-a217-1a2d0040c272"]] ``` |
 	| terminals | Opcional | Lista de mac address de terminais para o videowall  ``` ["06-00-00-00-00-00","06-00-00-00-00-00"] ``` |
 	| language | Opcional |  |
 
@@ -171,7 +171,7 @@ Retorna uma lista de playlists e suas configurações.
   --url 'http://{{api-url}}/updatePlaylist' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","playlist_token":"{{playlist_token}}","label": "{{label}}", "random": "{{random}}","looping": "{{looping}}","mute": "{{mute}}","duration_live": "{{duration_live}}","instagram": "{{instagram}}","rss": "{{rss}}","orientation": "{{orientation}}","led": "{{led}}", "videowall": "{{videowall}}", "files": [{"file_name": "{{file_name}}","token": "{{token}}","md5": "{{md5}}","description": "{{description}}","creation_date": "{{creation_date}}","duration": "{{duration}}","url": "{{url}}","image": "{{image}}","type": "{{type}}"}],"terminals": ["{{mac_address}}"],"language":"{{language}}"}'````
+  --data '{"contract_hash":"{{contract_hash}}","playlist_token":"{{playlist_token}}","label": "{{label}}", "random": "{{random}}","looping": "{{looping}}","mute": "{{mute}}","duration_live": "{{duration_live}}","instagram": "{{instagram}}","rss": "{{rss}}","orientation": "{{orientation}}","led": "{{led}}", "videowall": "{{videowall}}", "files": [{{file_name}}],"terminals": ["{{mac_address}}"],"language":"{{language}}"}'````
 
 <br/>
 
