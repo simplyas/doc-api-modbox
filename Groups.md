@@ -2,10 +2,10 @@
 
 Este recurso permite gestão de grupos para organização dos recursos no sistema.
 
-- [Lista Grupos](Goups.md#lista-grupos)
-- [Novo Grupo](Goups.md#novo-grupo)
-- [Atualiza Grupo](Goups.md#atualiza-grupo)
-- [Deleta Grupo](Goups.md#deleta-grupo)
+- [Lista Grupos](Groups.md#lista-grupos)
+- [Novo Grupo](Groups.md#novo-grupo)
+- [Atualiza Grupo](Groups.md#atualiza-grupo)
+- [Deleta Grupo](Groups.md#deleta-grupo)
 ----
 <br/>
 
