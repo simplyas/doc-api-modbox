@@ -258,6 +258,6 @@ Retorna uma lista de agendamentos do recurso selecionado.
   --url 'http://{{api-url}}/reorderResource' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}",{"group_token":"{{group_token}}","resources":"{{resources}}","resource":"{{resource}}","resource":"{{resource}}","resources":"{{resources}}"}'
+  --data '{"contract_hash":"{{contract_hash}}","group_token":"{{group_token}}","resources":"{{resources}}","resource":"{{resource}}","resource":"{{resource}}","resources":"{{resources}}"}'
   ````
 
