@@ -91,7 +91,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	
 	|Código| Resposta |
 	|--|--|
-	| 200 | `{"message":"Ajustes aplicados com sucesso!"}` |
+	| 200 | `{"message":"Ajustes aplicados com sucesso!","resource_token":"3f7f681b-33b8-4595-82cc-41094a9333fc"}` |
 	| 400 | `{"error":"Informe uma hash correta."}` 
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
@@ -133,9 +133,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 		| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
-	| group_token | Obrigatório | Token do grupo |
-	| id_resource | Obrigatório | ID do agendamento do recurso |
-	| token | Obrigatório | Token do recurso  |
+	| resource_token | Obrigatório | Token do grupo |
 	| resource | Obrigatório | Recurso deve ser: "playlist, "network", "clock", "logotype" ou "message"  |
 	| schedule | Opcional | Json com agendamento ``` "schedule": [{"days_week": ["seg","ter","qui","sex","sab"],"day_in": "","day_out": "","time": ["08:00","12:00"]}] ``` |
 	| order | Opcional | Ordem do agendamento no terminal |
@@ -150,7 +148,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
 	| 404 | `{"error":"Nenhum contrato encontrado."}`|
-	| 400 | `{"error":"Nenhum grupo encontrado."}` |
+	| 400 | `{"error":"Nenhum token encontrado."}` |
 	| 400 | `{"error":"Nenhum agendamento encontrado."}` |
 	| 400 | `{"error":"Verifique o recurso informado."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
@@ -162,7 +160,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
   --url 'http://{{api-url}}/updateResource' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","id_resource":"{{id_resource}}", "group_token":"{{group_token}}","token":"{{token}}","resource":"{{resource}}","schedule":"{{schedule}}","order":"{{order}}","is_active":"{{is_active}}"}'
+  --data '{"contract_hash":"{{contract_hash}}","resource_token":"{{resource_token}}", "resource":"{{resource}}","schedule":"{{schedule}}","order":"{{order}}","is_active":"{{is_active}}"}'
   ````
 
 <br/>
@@ -188,9 +186,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
-	| group_token | Obrigatório | Token do grupo |
-	| id_resource | Obrigatório | ID do agendamento do recurso |
-	| token | Obrigatório | Token do recurso  |
+	| resource_token | Obrigatório | Token do grupo |
 	| resource | Obrigatório | Recurso deve ser: "playlist, "network", "clock", "logotype" ou "message"  |
 	
 * **Respostas:**
@@ -212,7 +208,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
   --url 'http://{{api-url}}/deleteResource' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","id_resource":"{{id_resource}}", "group_token":"{{group_token}}","token":"{{token}}","resource":"{{resource}}"}'
+  --data '{"contract_hash":"{{contract_hash}}","resource_token":"{{resource_token}}","resource":"{{resource}}"}'
   ````
 
 
