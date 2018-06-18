@@ -6,6 +6,7 @@ Este recurso permite definir agendamento para todos os módulos do Modbox.
 - [Novo Recurso](Resources.md#novo-recurso)
 - [Atualiza Recurso](Resources.md#atualiza-recurso)
 - [Deleta Recurso](Resources.md#deleta-recurso)
+- [Reordena Recursos](Resources.md#reordena-recursos)
 ----
 <br/>
 
@@ -135,7 +136,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| contract_hash | Obrigatório | Hash do contrato |
 	| resource_token | Obrigatório | Token do grupo |
 	| resource | Obrigatório | Recurso deve ser: "playlist, "network", "clock", "logotype" ou "message"  |
-	| schedule | Opcional | Json com agendamento ``` "schedule": [{"days_week": ["seg","ter","qui","sex","sab"],"day_in": "","day_out": "","time": ["08:00","12:00"]}] ``` |
+	| schedule | Opcional | Json com agendamento ```"schedule": [{"days_week": ["seg","ter","qui","sex","sab"],"day_in": "","day_out": "","time": ["08:00","12:00"]}] ``` |
 	| order | Opcional | Ordem do agendamento no terminal |
 	| is_active | Opcional | true / false |
 
@@ -167,7 +168,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 
 **Deleta Recurso**
 ----
-  Recebe requisição contendo a hash do contrato, id do agendamento do recurso, recurso, token do grupo para deletar um agendamento de recurso.
+  Recebe requisição contendo a hash do contrato, token do agendamento do recurso, recurso e token do grupo para deletar um agendamento de recurso.
 
 * **URL**
 
@@ -211,5 +212,51 @@ Retorna uma lista de agendamentos do recurso selecionado.
   --data '{"contract_hash":"{{contract_hash}}","resource_token":"{{resource_token}}","resource":"{{resource}}"}'
   ````
 
+<br/>
 
+**Reordena Recursos**
+----
+  Recebe requisição contendo a hash do contrato, lista de token do agendamento do recurso com a nova ordem, recurso e token do grupo reordenar os agendamentos.
+
+* **URL**
+
+  {{api-url}}/reorderResource
+
+* **Método HTTP:**
+
+  `POST`
+  
+*  **Parâmetros na URL**
+
+   Nada 
+
+* **Parâmetros**
+
+	| Parâmetro | Recurso | Observação |
+	|--|--|--|
+	| contract_hash | Obrigatório | Hash do contrato |
+	| resource_token | Obrigatório | Token do grupo |
+	| resource | Obrigatório | Recurso deve ser: "playlist, "network", "clock", "logotype" ou "message"  |
+	
+* **Respostas:**
+	
+	|Código| Resposta |
+	|--|--|
+	| 200 | `{"message":"Ajustes aplicados com sucesso!"}` |
+	| 400 | `{"error":"Verifique o JSON enviado."}` |
+	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 402 | `{"error":"Nenhum contrato encontrado."}`|
+	| 402 | `{"error":"Nenhum token encontrado."}`|
+	| 402 | `{"error":"Nenhum agendamento encontrado."}`|
+	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
+
+* **Exemplo:**
+	
+	````curl
+	curl --request POST \
+  --url 'http://{{api-url}}/deleteResource' \
+  --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
+  --header 'Content-Type: application/json' \
+  --data '{"contract_hash":"{{contract_hash}}","resources":"{{resources}}","resource":"{{resource}}","resource":"{{resource}}"}'
+  ````
 
