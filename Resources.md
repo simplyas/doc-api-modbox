@@ -81,6 +81,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| resource_token | Obrigatório | Token do recurso |
 	| group_token | Obrigatório | Token do grupo |
 	| resource | Obrigatório | Recurso deve ser: "playlist, "network", "clock", "logotype" ou "message"  |
 	| schedule | Opcional | Json com agendamento ``` "schedule": [{"days_week": ["seg","ter","qui","sex","sab"],"day_in": "","day_out": "","time": ["08:00","12:00"]}] ``` |
@@ -133,7 +134,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
-	| resource_token | Obrigatório | Token do agendamento do recurso |
+	| token | Obrigatório | Token do agendamento do recurso |
 	| resource | Obrigatório | Recurso deve ser: "playlist, "network", "clock", "logotype" ou "message" |
 	| schedule | Opcional | Json com agendamento ``` "schedule": [{"days_week":["seg","ter","qui","sex","sab"],"day_in": "","day_out": "","time": ["08:00","12:00"]}] ``` |
 	| order | Opcional | Ordem do agendamento no terminal |
