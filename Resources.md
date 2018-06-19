@@ -115,7 +115,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 
 **Atualiza Recurso**
 ----
- Recebe requisição contendo a hash do contrato, id do agendamento do recurso, recurso, token do grupo e propriedades para atualizar um agendamento de recurso.
+ Recebe requisição contendo a hash do contrato, token do agendamento do recurso a ser atualizado, recurso, token do grupo e propriedades para atualizar um agendamento de recurso.
 
 * **URL**
 
@@ -134,7 +134,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
-	| token | Obrigatório | Token do agendamento do recurso |
+	| token | Obrigatório | Token do agendamento do recurso|
 	| resource | Obrigatório | Recurso deve ser: "playlist, "network", "clock", "logotype" ou "message" |
 	| schedule | Opcional | Json com agendamento ``` "schedule": [{"days_week":["seg","ter","qui","sex","sab"],"day_in": "","day_out": "","time": ["08:00","12:00"]}] ``` |
 	| order | Opcional | Ordem do agendamento no terminal |
@@ -168,7 +168,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 
 **Deleta Recurso**
 ----
-  Recebe requisição contendo a hash do contrato, token do agendamento do recurso, recurso e token do grupo para deletar um agendamento de recurso.
+  Recebe requisição contendo a hash do contrato, token do agendamento do recurso a ser deletado, recurso e token do grupo para deletar um agendamento de recurso.
 
 * **URL**
 
