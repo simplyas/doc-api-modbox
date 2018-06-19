@@ -108,7 +108,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
   --url 'http://{{api-url}}/submitResource' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","contract_hash":"{{group_token}}","token":"{{token}}","resource":"{{resource}}","schedule":"{{schedule}}","order":"{{order}}","is_active":"{{is_active}}"}'
+  --data '{"contract_hash":"{{contract_hash}}","contract_hash":"{{group_token}}","resource_token":"{{resource_token}}","resource":"{{resource}}","schedule":"{{schedule}}","order":"{{order}}","is_active":"{{is_active}}"}'
   ````
 
 <br/>
@@ -161,7 +161,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
   --url 'http://{{api-url}}/updateResource' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","resource_token":"{{resource_token}}", "resource":"{{resource}}","schedule":"{{schedule}}","order":"{{order}}","is_active":"{{is_active}}"}'
+  --data '{"contract_hash":"{{contract_hash}}","token":"{{token}}", "resource":"{{resource}}","schedule":"{{schedule}}","order":"{{order}}","is_active":"{{is_active}}"}'
   ````
 
 <br/>
@@ -187,7 +187,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
-	| resource_token | Obrigatório | Token do agendamento do recurso |
+	| token | Obrigatório | Token do agendamento do recurso |
 	| resource | Obrigatório | Recurso deve ser: "playlist, "network", "clock", "logotype" ou "message"  |
 	
 * **Respostas:**
@@ -209,7 +209,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
   --url 'http://{{api-url}}/deleteResource' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","resource_token":"{{resource_token}}","resource":"{{resource}}"}'
+  --data '{"contract_hash":"{{contract_hash}}","token":"{{token}}","resource":"{{resource}}"}'
   ````
 
 <br/>
@@ -235,9 +235,8 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
-	| group_token | Obrigatório | Token do grupo |
 	| resource | Obrigatório | Recurso deve ser: "playlist, "network", "clock", "logotype" ou "message"  |
-	| resources | Obrigatório | Lista de agendamentos ```` "resources":[{"token": "b2f1f9b7-52cd-5412-9ac0-c34x2aa64bf6","order": 0},{"token": "bec6532f-8e87-8379-bf8b-b869843g8dc6","order": 1},{"token": "19876e3e-faed-a0ab-10c3-fe67afc97a72","order": 2}] ````  |
+	| resources_list | Obrigatório | Lista de agendamentos ```` "resources":[{"token": "b2f1f9b7-52cd-5412-9ac0-c34x2aa64bf6","order": 0},{"token": "bec6532f-8e87-8379-bf8b-b869843g8dc6","order": 1},{"token": "19876e3e-faed-a0ab-10c3-fe67afc97a72","order": 2}] ````  |
 	
 * **Respostas:**
 	
@@ -258,6 +257,6 @@ Retorna uma lista de agendamentos do recurso selecionado.
   --url 'http://{{api-url}}/reorderResource' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","group_token":"{{group_token}}","resources":"{{resources}}","resource":"{{resource}}","resource":"{{resource}}","resources":"{{resources}}"}'
+  --data '{"contract_hash":"{{contract_hash}}","resources":"{{resources}}","resource":"{{resource}}","resource":"{{resource}}","resources_list":"{{resources_list}}"}'
   ````
 
