@@ -115,7 +115,7 @@ Retorna uma lista de logomarcas e suas configurações.
 
 * **URL**
 
-  {{api-url}}/updateClock
+  {{api-url}}/updateLogo
 
 * **Método HTTP:**
 
