@@ -38,7 +38,7 @@ Retorna uma lista de redes e suas configurações.
 	
 	|Código| Resposta |
 	|--|--|
-	| 200 | ```{"networks":[{"label":"WIFI","password","name":"WIFI","password":"","auth":"False","auth_url":"","wifi_banner":"fa5d95fbfb77fd246d9c928d","max_time":"60","filter":"low","deny_reauth":"False","redirect":"http://google.com.br","deny_networks":"True","deny_captive":"False","dhcp_beginning":"5","dhcp_ending":"254","dhcp_lease":"1h","bandwidth":"60","allow_devices":[],"deny_devices":[],"network_token":"fd246d9c-30f0-4a90-928d-fa5d95fbfb77"}]}``` |
+	| 200 | ``` {"networks":[{"label":"WIFI","password","name":"WIFI","password":"","auth":"False","auth_url":"","wifi_banner":"fa5d95fbfb77fd246d9c928d","max_time":"60","filter":"low","deny_reauth":"False","redirect":"http://google.com.br","deny_networks":"True","deny_captive":"False","dhcp_beginning":"5","dhcp_ending":"254","dhcp_lease":"1h","bandwidth":"60","allow_devices":[],"deny_devices":[],"network_token":"fd246d9c-30f0-4a90-928d-fa5d95fbfb77"}]}``` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
