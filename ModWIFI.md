@@ -93,6 +93,7 @@ Retorna uma lista de redes e suas configurações.
 	| dhcp_beginning | Opcional | Início da faixa de IP da rede Wi-Fi (de 2 até 254) |	
 	| dhcp_ending | Opcional | Final da faixa de IP da rede Wi-Fi (de 2 até 254) |	
 	| dhcp_lease | Opcional | Tempo para liberação dos IP's no DHCP (ex: 15m, 1h) |
+	| wifi_banner | Opcional | Imagem de boas vindas do captive portal |
 	| language | Opcional |  |
 
 * **Respostas:**
@@ -117,7 +118,7 @@ Retorna uma lista de redes e suas configurações.
   --url 'http://{{api-url}}/submitNetwork' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}", "label":"{{label}}", "name":"{{name}}","password":"{{password}}","auth":"{{auth}}","auth_url":"{{auth_url}}","deny_captive":"{{deny_captive}}","redirect":"{{redirect}}","max_time":"{{max_time}}","bandwidth":"{{bandwidth}}","deny_reauth":"{{deny_reauth}}","filter":"{{filter}}","deny_networks":"{{deny_networks}}","dhcp_beginning":"{{dhcp_beginning}}","dhcp_ending":"{{dhcp_ending}}","dhcp_lease":"{{dhcp_lease}}","language":"{{language}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "label":"{{label}}", "name":"{{name}}","password":"{{password}}","auth":"{{auth}}","auth_url":"{{auth_url}}","deny_captive":"{{deny_captive}}","redirect":"{{redirect}}","max_time":"{{max_time}}","bandwidth":"{{bandwidth}}","deny_reauth":"{{deny_reauth}}","filter":"{{filter}}","deny_networks":"{{deny_networks}}","dhcp_beginning":"{{dhcp_beginning}}","dhcp_ending":"{{dhcp_ending}}","dhcp_lease":"{{dhcp_lease}}","wifi_banner":"{{wifi_banner}}","language":"{{language}}"}'
   ````
 
 <br/>
@@ -159,6 +160,7 @@ Retorna uma lista de redes e suas configurações.
 	| dhcp_beginning | Opcional | Início da faixa de IP da rede Wi-Fi (de 2 até 254) |	
 	| dhcp_ending | Opcional | Final da faixa de IP da rede Wi-Fi (de 2 até 254) |	
 	| dhcp_lease | Opcional | Tempo para liberação dos IP's no DHCP (ex: 15m, 1h) |
+	| wifi_banner | Opcional | Imagem de boas vindas do captive portal |
 	| language | Opcional |  |
 
 * **Respostas:**
@@ -184,7 +186,7 @@ Retorna uma lista de redes e suas configurações.
   --url 'http://{{api-url}}/updateNetwork' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{{"contract_hash":"{{contract_hash}}","network_token":"{{network_token}}", "label":"{{label}}", "name":"{{name}}","password":"{{password}}","auth":"{{auth}}","auth_url":"{{auth_url}}","deny_captive":"{{deny_captive}}","redirect":"{{redirect}}","max_time":"{{max_time}}","bandwidth":"{{bandwidth}}","deny_reauth":"{{deny_reauth}}","filter":"{{filter}}","deny_networks":"{{deny_networks}}","dhcp_beginning":"{{dhcp_beginning}}","dhcp_ending":"{{dhcp_ending}}","dhcp_lease":"{{dhcp_lease}}"},"language":"{{language}}"}'
+  --data '{{"contract_hash":"{{contract_hash}}","network_token":"{{network_token}}", "label":"{{label}}", "name":"{{name}}","password":"{{password}}","auth":"{{auth}}","auth_url":"{{auth_url}}","deny_captive":"{{deny_captive}}","redirect":"{{redirect}}","max_time":"{{max_time}}","bandwidth":"{{bandwidth}}","deny_reauth":"{{deny_reauth}}","filter":"{{filter}}","deny_networks":"{{deny_networks}}","dhcp_beginning":"{{dhcp_beginning}}","dhcp_ending":"{{dhcp_ending}}","dhcp_lease":"{{dhcp_lease}}"},"wifi_banner":"{{wifi_banner}}"},"language":"{{language}}"}'
   ````
 
 <br/>
