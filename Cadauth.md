@@ -209,7 +209,7 @@ Retorna uma lista de usuários contendo privilégios e preferências dos usuári
 	
 	|Código| Resposta |
 	|--|--|
-	| 200 | ``` "users": [{"name": "Marcelo Prestes","email": "marcelo.prestes@simplyas.com","level": "Administrator","menu_informative": "True","menu_connectivity": "True","id_rules": "10608"}``` |
+	| 200 | ``` "users": [{"name": "Nome do Usuário","email": "usuario@email.com","access_devices": "False","access_locations":"access_connectivity": "False","access_administrative": "False","access_api": "False","token": "7fa4ce1b-11f1-41ee-8b3e-df8824d73004a"}``` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
@@ -230,7 +230,7 @@ Retorna uma lista de usuários contendo privilégios e preferências dos usuári
 
 **Nova Permissão**
 ----
- Recebe requisição contendo dados para cadastro (cria um novo usuário caso não exista) ou se informado o token do usuário atualiza as informações de preferências. Retorna uma senha aleatória para o novo usuário criado.
+ Recebe requisição contendo dados para cadastro de nova permissão para o usuário informado. Retorna uma senha aleatória para o novo usuário criado, caso este não exista.
 
 * **URL**
 
@@ -251,31 +251,26 @@ Retorna uma lista de usuários contendo privilégios e preferências dos usuári
 	| contract_hash | Obrigatório | Hash do contrato |
 	| name | Obrigatório | Nome completo |
 	| email | Obrigatório |  |
-	| level | Obrigatório | Administrator ou Operator |
-	| menu_informative | Opcional |True ou False |
-	| menu_connectivity | Opcional | True ou False |
-	| menu_monitoring | Opcional | True ou False |
-	| menu_advertising | Opcional | True ou False |
-	| menu_smartcamera | Opcional | True ou False |
+	| access_devices | Opcional |True ou False |
+	| access_locations | Opcional | True ou False |
+	| access_informative | Opcional | True ou False |
+	| access_connectivity | Opcional | True ou False |
+	| access_administrative | Opcional | True ou False |
+	| access_api | Opcional | True ou False |
 	| language | Opcional |  |
 
 * **Respostas:**
 	
 	|Código| Resposta |
 	|--|--|
-	| 200 | `{"message":"password":"ABC123"}` |
+	| 200 | `{"message":"Usuário criado com sucesso.","password":"ABC123"}` |
 	| 200 | `{"message":"Acesso criado com sucesso!"}` |
-	| 200 | `{"message":"Cadastro atualizado com sucesso!"}` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` 
 	| 400 | `{"error":"Informe um nome completo."}` 
-	| 400 | `{"error":"Informe um e-email correto."}` 
-	| 400 | `{"error":"Informe o level do contrato (Administrator ou Operator)"}` |
+	| 400 | `{"error":"Informe um e-email correto."}` |
 	| 400 | `{"error":"Informe uma hash correta."}` |
 	| 400 | `{"error":"Verifique os parametros enviados."}` |
 	| 404 | `{"error":"Nenhum contrato encontrado."}`|
-	| 404 | `{"error":"Nenhum usuario encontrado."}`|
-	| 404 | `{"error":"Usuario nao tem acesso no contrato."}`|
-	| 409 | `{"error":"O usuario informado consta com acesso ativo neste contrato."}`|
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
@@ -285,13 +280,13 @@ Retorna uma lista de usuários contendo privilégios e preferências dos usuári
   --url 'http://{{api-url}}/submitRule' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","name":"J. Random Loser","email":"test@simplyas.com","level":"Operator","menu_informative":"True","menu_connectivity":"False","menu_monitoring":"False","menu_advertising":"False","menu_smartcamera":"False"} ````
+  --data '{"contract_hash":"{{contract_hash}}","name":"J. Random Loser","email":"test@simplyas.com","access_devices":"True","access_locations":"False","access_informative":"False","access_connectivity":"False","access_api":"False"} ````
 
 <br/>
 
 **Atualiza Permissão**
 ----
- Recebe requisição contendo a hash do contrato, token e propriedades para atualizar um relógio.
+ Recebe requisição contendo a hash do contrato, token e propriedades para atualizar uma permissão.
 
 * **URL**
 
@@ -310,35 +305,26 @@ Retorna uma lista de usuários contendo privilégios e preferências dos usuári
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
-	| name | Obrigatório | Nome completo |
-	| email | Obrigatório |  |
-	| level | Obrigatório | Administrator ou Operator |
-	| user_token | Opcional | Atualiza informações |
-	| menu_informative | Opcional |True ou False |
-	| menu_connectivity | Opcional | True ou False |
-	| menu_monitoring | Opcional | True ou False |
-	| menu_advertising | Opcional | True ou False |
-	| menu_smartcamera | Opcional | True ou False |
+	| rules_token | Obrigatório | Token da permissão |
+	| access_devices | Opcional |True ou False |
+	| access_locations | Opcional | True ou False |
+	| access_informative | Opcional | True ou False |
+	| access_connectivity | Opcional | True ou False |
+	| access_administrative | Opcional | True ou False |
+	| access_api | Opcional | True ou False |
 	| language | Opcional |  |
 
 * **Respostas:**
 	
 	|Código| Resposta |
 	|--|--|
-	| 200 | `{"message":"password":"ABC123"}` |
-	| 200 | `{"message":"Acesso criado com sucesso!"}` |
 	| 200 | `{"message":"Cadastro atualizado com sucesso!"}` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` 
-	| 400 | `{"error":"Informe um nome completo."}` 
-	| 400 | `{"error":"Informe um e-email correto."}` 
-	| 400 | `{"error":"Informe o level do contrato (Administrator ou Operator)"}` |
 	| 400 | `{"error":"Informe uma hash correta."}` |
 	| 400 | `{"error":"Informe um token correto."}` |
 	| 400 | `{"error":"Verifique os parametros enviados."}` |
 	| 404 | `{"error":"Nenhum contrato encontrado."}`|
-	| 404 | `{"error":"Nenhum usuario encontrado."}`|
 	| 404 | `{"error":"Usuario nao tem acesso no contrato."}`|
-	| 409 | `{"error":"O usuario informado consta com acesso ativo neste contrato."}`|
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
@@ -348,12 +334,12 @@ Retorna uma lista de usuários contendo privilégios e preferências dos usuári
   --url 'http://{{api-url}}/updateRule' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","user_token":"{{user_token}}","name":"{{name}}","email":"{{email}}","level":"{{level}}","menu_informative":"{{menu_informative}}","menu_connectivity":"{{menu_connectivity}}","menu_monitoring":"menu_monitoring","menu_advertising":"{{menu_advertising}}","menu_smartcamera":"{{menu_smartcamera}}"} ````
+  --data '{"contract_hash":"{{contract_hash}}","rules_token":"{{rules_token}}","access_devices":"True","access_locations":"False","access_informative":"False","access_connectivity":"False","access_api":"False"} ````
 <br/>
 
 **Deleta Permissão**
 ----
-  Recebe requisição contendo a hash do contrato e o token da relógio para exclusão.
+  Recebe requisição contendo a hash do contrato e o token da permissão para exclusão.
 
 * **URL**
 
@@ -372,7 +358,7 @@ Retorna uma lista de usuários contendo privilégios e preferências dos usuári
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
-	| id_rules | Obrigatório | ID da permissão |
+	| rules_token | Obrigatório | Token da permissão |
 	
 * **Respostas:**
 	
@@ -381,7 +367,9 @@ Retorna uma lista de usuários contendo privilégios e preferências dos usuári
 	| 200 | `{"message":"Ajustes aplicados com sucesso!"}` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
-	| 402 | `{"error":"Nenhuma permissão encontrada."}`|
+	| 400 | `{"error":"Informe uma hash correta."}` |
+	| 400 | `{"error":"Informe um token correto."}` |
+	| 404 | `{"error":"Nenhum contrato encontrada."}`|
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
@@ -391,7 +379,7 @@ Retorna uma lista de usuários contendo privilégios e preferências dos usuári
   --url 'http://{{api-url}}/deleteRule' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{{"contract_hash":"{{contract_hash}}","id_rules":"{{id_rules}}"'
+  --data '{{"contract_hash":"{{contract_hash}}","rules_token":"{{rules_token}}"'
   ````
 
 
