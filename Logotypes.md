@@ -130,7 +130,7 @@ Retorna uma lista de logomarcas e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
-	| logotype_token | Obrigatório | Token da logomarca |
+	| logo_token | Obrigatório | Token da logomarca |
 	| label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |
 	| image | Obrigatório | Hash da imagem |
 	| background_color | Opcional | Formato de cor hexadecimal. Ex: "1D1D1D" |
@@ -160,7 +160,7 @@ Retorna uma lista de logomarcas e suas configurações.
   --url 'http://{{api-url}}/updateLogo' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","logotype_token":"{{logotype_token}}","label":"{{label}}","image":"{{image}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","language":"{{language}}"}'
+  --data '{"contract_hash":"{{contract_hash}}","logo_token":"{{logo_token}}","label":"{{label}}","image":"{{image}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","language":"{{language}}"}'
   ````
 
 
@@ -187,7 +187,7 @@ Retorna uma lista de logomarcas e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
-	| logotype_token | Obrigatório | Token da logomarca |
+	| logo_token | Obrigatório | Token da logomarca |
 	
 * **Respostas:**
 	
@@ -207,7 +207,7 @@ Retorna uma lista de logomarcas e suas configurações.
   --url 'http://{{api-url}}/deleteLogo' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{{"contract_hash":"{{contract_hash}}","logotype_token":"{{logotype_token}}"'
+  --data '{{"contract_hash":"{{contract_hash}}","logo_token":"{{logo_token}}"'
   ````
 
 
