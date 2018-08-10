@@ -1,13 +1,13 @@
-# Métricas
+# Métricas Distribuidor
 
-Retorna métricas do contrato.
+Retorna métricas do contrato do distribuidor.
 
 ----
 <br/>
 
 **Métricas**
 ----
-Recebe requisição contendo a hash do contrato. Retorna uma lista com métricas do contrato.
+Recebe requisição contendo a hash do contrato. Retorna uma lista com métricas do contrato do distribuidor.
 
 * **URL**
 
