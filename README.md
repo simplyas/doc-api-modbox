@@ -49,7 +49,7 @@ Algumas informações antes de começarmos.
 
 ### Smartcam
 * [Pré-configurações](Smartcam_Presets.md)
-
+* [Smartcams](Smartcams.md)
 
 
 
