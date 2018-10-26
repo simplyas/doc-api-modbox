@@ -4,10 +4,10 @@
 Este recurso permite aos equipamentos Modbox exibir executar um módulo Smartcam.  
   
 
-- [Lista Smartcams](Clocks.md#lista-rel%C3%B3gios)  
-- [Nova Smartcam](Clocks.md#novo-rel%C3%B3gio)  
-- [Atualiza Smartcam](Clocks.md#atualiza-rel%C3%B3gio)  
-- [Deleta Smartam](Clocks.md#deleta-rel%C3%B3gio)  
+- [Lista Smartcams](Smartcams.md#lista-smartcams)  
+- [Nova Smartcam](Smartcams.md#nova-smartcam)  
+- [Atualiza Smartcam](Smartcams.md#atualiza-smartcam)  
+- [Deleta Smartam](Smartcams.md#deleta-smartcam)  
 
 ----  
 
