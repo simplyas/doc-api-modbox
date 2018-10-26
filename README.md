@@ -48,7 +48,7 @@ Algumas informações antes de começarmos.
 * [Agendamento](Resources.md)
 
 ### Smartcam
-* [Pré-configurações](Smartcam Presets.md)
+* [Pré-configurações](Smartcam_Presets.md)
 
 
 
