@@ -43,7 +43,7 @@ Retorna uma lista de smartcams e suas configurações.
     
  |Código| Resposta |  
  |--|--|  
- | 200 | ```{"clocks": [{"label": "CLOCK 1000","background_color": "1D1D1D","font_color": "FFFFFF","transparent": "False","screen_area": "0 90 20 100","screen_layer": "3","clock_token": "81c66760-d944-d695-3d1f-4dcab406606e"}]}``` |  
+ | 200 | ```{"smartcams":[{"label":"Contadordesorrisos","camera_source":"picamera","is_active":"True","debug_web":"True","debug_screen":"True","window_transparent":"True","window_position":"850,400,480,320","smartcam_token":"805470bc-121b-421e-89a9-0652166341c8","smartcam_preset_token":"322f889e-e4d6-4489-85c1-c421c0683f58","comments":"CaixaAbalcao"}``` |
  | 400 | `{"error":"Verifique o JSON enviado."}` |  
  | 400 | `{"error":"Informe um hash correto."}` |  
  | 400 | `{"error":"Verifique os parâmetros enviados."}` |  
@@ -87,13 +87,14 @@ Retorna uma lista de smartcams e suas configurações.
  | Parâmetro | Recurso | Observação |  
  |--|--|--|  
  | contract_hash | Obrigatório | Hash do contrato |  
+ | smartcam_preset_token | Obrigatório | Token do preset |  
  | label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |  
- | background_color | Opcional | Formato de cor hexadecimal. Ex: "1D1D1D" |  
- | font_color | Opcional | Formato de cor hexadecimal. Ex: "FFFFFF" |  
- | transparent | Opcional | "True"/"False" |  
- | screen_area | Opcional | Ex: "0 90 20 100" |  
- | screen_layer | Opcional | Valor numérico. Ex: "3" |  
- | language | Opcional |  |  
+ | debug_web | Opcional | Ativa/desativa visualização na web |  
+ | debug_screen | Opcional | Ativa/desativa savisualizaçãoída na tela hdmi |  
+ | window_transparent | Opcional | "True"/"False" |  
+ | window_position | Opcional | Ex: "850,400,480,320" |  
+ | is_active | Opcional | "True"/"False" |  
+ | language | Opcional | "pt/en" |  
   
 * **Respostas:**  
     
@@ -114,13 +115,12 @@ Retorna uma lista de smartcams e suas configurações.
   --url 'http://{{api-url}}/submitSmartcam' \  
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \  
   --header 'Content-Type: application/json' \  
-  --data '{"contract_hash":"{{contract_hash}}","label":"{{label}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","language":"{{language}}"}'  
+  --data '{"contract_hash":"{{contract_hash}}","smartcam_preset_token":"{{smartcam_preset_token}}","label":"{{label}}","debug_web":"{{debug_web}}","debug_screen":"{{debug_screen}}","window_transparent":"{{window_transparent}}","window_position":"{{window_position}}","is_active":"{{is_active}}","language":"{{language}}"}'  
   ````  
   
 
 <br/>  
   
-
 **Atualiza Smartcam**  
 ----  
 
@@ -143,15 +143,16 @@ Retorna uma lista de smartcams e suas configurações.
   
  | Parâmetro | Recurso | Observação |  
  |--|--|--|  
- | contract_hash | Obrigatório | Hash do contrato |  
- | clock_token | Obrigatório | Token do relógio |  
+ | contract_hash | Obrigatório | Hash do contrato | 
+ | smartcam_token | Obrigatório | Token da smartcam |  
+ | smartcam_preset_token | Obrigatório | Token do preset |  
  | label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |  
- | background_color | Opcional | Formato de cor hexadecimal. Ex: "1D1D1D" |  
- | font_color | Opcional | Formato de cor hexadecimal. Ex: "FFFFFF" |  
- | transparent | Opcional | "True"/"False" |  
- | screen_area | Opcional | Ex: "0 90 20 100" |  
- | screen_layer | Opcional | Valor numérico. Ex: "3" |  
- | language | Opcional |  |  
+ | debug_web | Opcional | Ativa/desativa visualização na web |  
+ | debug_screen | Opcional | Ativa/desativa savisualizaçãoída na tela hdmi |  
+ | window_transparent | Opcional | "True"/"False" |  
+ | window_position | Opcional | Ex: "850,400,480,320" |  
+ | is_active | Opcional | "True"/"False" |  
+ | language | Opcional | "pt/en" |   
   
 * **Respostas:**  
     
@@ -173,7 +174,7 @@ Retorna uma lista de smartcams e suas configurações.
   --url 'http://{{api-url}}/updateSmartcam' \  
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \  
   --header 'Content-Type: application/json' \  
-  --data '{"contract_hash":"{{contract_hash}}","clock_token":"{{clock_token}}","label":"{{label}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","language":"{{language}}"}'  
+  --data '{"contract_hash":"{{contract_hash}}","smartcam_preset_token":"{{smartcam_preset_token}}","token_smartcam":"{{token_smartcam}}","label":"{{label}}","debug_web":"{{debug_web}}","debug_screen":"{{debug_screen}}","window_transparent":"{{window_transparent}}","window_position":"{{window_position}}","is_active":"{{is_active}}","language":"{{language}}"}'  
   ````  
   
   
