@@ -47,9 +47,9 @@ Algumas informações antes de começarmos.
 ### Agendamento de Recursos
 * [Agendamento](Resources.md)
 
-### Smartcam
-* [Pré-configurações](Smartcam_Presets.md)
-* [Smartcams](Smartcams.md)
 
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTgyMzQ3MTUyXX0=
+-->
