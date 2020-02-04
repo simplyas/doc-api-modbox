@@ -15,7 +15,7 @@ Guarde em um local seguro os atributos "user_token" e "contract_hash" pois eles 
 <br/>
 
 
-**Cadastra Usuários**
+**Cadastra Usuário**
 ----
   Recebe requisição contendo dados para cadastro de novo usuário. Retorna o token do usuário criado.
   
@@ -386,5 +386,6 @@ Retorna uma lista de usuários contendo privilégios e preferências dos usuári
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MjEyNjgzOCwxODMyMjAxNTldfQ==
+eyJoaXN0b3J5IjpbMTgzMjIwMTU5LC01NTIxMjY4MzgsMTgzMj
+IwMTU5XX0=
 -->
