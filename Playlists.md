@@ -202,7 +202,7 @@ Retorna uma lista de playlists e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
-	
+	| user_token | Obrigatório | Token do usuário |
 	| playlist_token | Obrigatório | Token da playlist |
 	
 * **Respostas:**
@@ -214,6 +214,7 @@ Retorna uma lista de playlists e suas configurações.
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
 	| 402 | `{"error":"Nenhum contrato encontrado."}`|
 	| 402 | `{"error":"Nenhuma playlist encontrada."}`|
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
@@ -223,11 +224,11 @@ Retorna uma lista de playlists e suas configurações.
   --url 'http://{{api-url}}/deletePlaylist' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{{"contract_hash":"{{contract_hash}}","playlist_token":"{{playlist_token}}"'
+  --data '{{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","playlist_token":"{{playlist_token}}"'
   ````
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NjIzNjM1Ml19
+eyJoaXN0b3J5IjpbLTEzMTI0MTEyOTJdfQ==
 -->
