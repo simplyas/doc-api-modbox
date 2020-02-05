@@ -51,7 +51,7 @@ Retorna uma lista de grupos e seus terminais.
   --url 'http://{{api-url}}/requestGroups' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}"}'
   ````
 
 <br/>
@@ -78,6 +78,7 @@ Retorna uma lista de grupos e seus terminais.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| name | Obrigatório | Identificação do grupo com no mínimo 3 e máximo 30 caracteres |
 	| terminals | Opcional | ``["d24f88e6-6466-49f3-9156-58a295cb5f33"]`` |
 	| language | Opcional |  |
@@ -90,6 +91,7 @@ Retorna uma lista de grupos e seus terminais.
 	| 400 | `{"error":"Informe uma hash correta."}` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Informe o label com 3 a 30 caracteres."}` |
 	| 409 | `{"error":"Existe outro grupo com o mesmo nome. Escolha um nome diferente."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
@@ -101,7 +103,7 @@ Retorna uma lista de grupos e seus terminais.
   --url 'http://{{api-url}}/submitGroup' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","name":"{{name}}","terminals":"{{terminals}}","language":"{{language}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","name":"{{name}}","terminals":"{{terminals}}","language":"{{language}}"}'
   ````
 
 <br/>
@@ -127,6 +129,7 @@ Retorna uma lista de grupos e seus terminais.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| group_token | Obrigatório | Token do grupo |
 	| name | Opcional | Identificação do grupo com no mínimo 3 e máximo 30 caracteres |
 	| terminals | Opcional | ``["d24f88e6-6466-49f3-9156-58a295cb5f33"]`` |
@@ -139,6 +142,7 @@ Retorna uma lista de grupos e seus terminais.
 	| 200 | `{"message":"Grupo criado com sucesso!"}` |
 	| 400 | `{"error":"Informe uma hash correta."}` |
 	| 400 | `{"error":"Nenhum grupo encontrato."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
 	| 400 | `{"error":"Informe o label com 3 a 30 caracteres."}` |
@@ -152,7 +156,7 @@ Retorna uma lista de grupos e seus terminais.
   --url 'http://{{api-url}}/updateGroup' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","group_token":"{{group_token}}","name":"{{name}}","terminals":"{{terminals}}","language":"{{language}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","group_token":"{{group_token}}","name":"{{name}}","terminals":"{{terminals}}","language":"{{language}}"}'
   ````
 
 <br/>
@@ -178,6 +182,7 @@ Retorna uma lista de grupos e seus terminais.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| group_token | Obrigatório | Token do relógio |
 	
 * **Respostas:**
@@ -187,6 +192,7 @@ Retorna uma lista de grupos e seus terminais.
 	| 200 | `{"message":"Ajustes aplicados com sucesso!"}` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 402 | `{"error":"Nenhum contrato encontrado."}`|
 	| 402 | `{"error":"Nenhum token encontrado."}`|
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
@@ -198,11 +204,11 @@ Retorna uma lista de grupos e seus terminais.
   --url 'http://{{api-url}}/deleteGroup' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{{"contract_hash":"{{contract_hash}}","group_token":"{{group_token}}"'
+  --data '{{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","group_token":"{{group_token}}"'
   ````
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzU4MzE1MzldfQ==
+eyJoaXN0b3J5IjpbMTI4NTY1MTMyM119
 -->
