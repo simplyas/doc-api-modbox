@@ -26,6 +26,7 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de arquivos d
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 
 * **Respostas:**
 	
@@ -48,3 +49,6 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de arquivos d
   --data '{"contract_hash":"{{contract_hash}}"}
   ```` 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzcxNjc2MTA3XX0=
+-->
