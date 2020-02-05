@@ -35,6 +35,7 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de arquivos d
 	| 200 | ```{"custom":"0","files":[{"name":"OFP6620","md5":"7de83bdd072116e25bd30998413d2708","creation_date":"2018-03-28","duration":"10"}]}``` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe uma hash correta."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Nenhum contrato encontrado."}` | 
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
@@ -50,5 +51,5 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de arquivos d
   ```` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcxNjc2MTA3XX0=
+eyJoaXN0b3J5IjpbNTQwNjAzODgzXX0=
 -->
