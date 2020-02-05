@@ -32,6 +32,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	
 	| resource | Obrigatório | Recurso deve ser: "playlist, "network", "clock", "logotype" ou "message" |
 	| group_token | Obrigatório | Token do Grupo |
 
@@ -260,3 +261,6 @@ Retorna uma lista de agendamentos do recurso selecionado.
   --data '{"contract_hash":"{{contract_hash}}","resources":"{{resources}}","resource":"{{resource}}","resource":"{{resource}}","resources_list":"{{resources_list}}"}'
   ````
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTM2NzI5Nzg5NV19
+-->
