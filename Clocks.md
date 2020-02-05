@@ -78,6 +78,7 @@ Retorna uma lista de relógios e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |
 	| background_color | Opcional | Formato de cor hexadecimal. Ex: "1D1D1D" |
 	| font_color | Opcional | Formato de cor hexadecimal. Ex: "FFFFFF" |
@@ -94,6 +95,7 @@ Retorna uma lista de relógios e suas configurações.
 	| 400 | `{"error":"Informe uma hash correta."}` 
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Informe o label com 1 a 32 caracteres."}` |
 	| 404 | `{"error":"Nenhum contrato encontrado."}`|
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
@@ -213,5 +215,5 @@ Retorna uma lista de relógios e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMyODk5OTcwXX0=
+eyJoaXN0b3J5IjpbLTI2MzI4MTQwXX0=
 -->
