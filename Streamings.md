@@ -48,9 +48,9 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de mídias on
   --url 'http://{{api-url}}/requestStreamings' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}"}
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}"}
   ```` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MDM5OTM3Ml19
+eyJoaXN0b3J5IjpbLTg5OTk5MTY2MF19
 -->
