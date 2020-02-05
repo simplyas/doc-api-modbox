@@ -1,9 +1,9 @@
 
 # Mod WIFI - Liberados e Bloqueados
 
-Este recurso permite aos equipamentos Modbox exibir um relógio personalizado na tela.
+Este recurso permite liberar e bloquear dispositivos no serviço hotspot do contrato.
 
-- [Lista Relógios](Clocks.md#lista-rel%C3%B3gios)
+- [Lista Dispositivo](Clocks.md#lista-rel%C3%B3gios)
 - [Novo Relógio](Clocks.md#novo-rel%C3%B3gio)
 - [Atualiza Relógio](Clocks.md#atualiza-rel%C3%B3gio)
 - [Deleta Relógio](Clocks.md#deleta-rel%C3%B3gio)
@@ -222,5 +222,5 @@ Retorna uma lista de relógios e suas configurações.
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IExpYmVyYWRvcyBlIEJsb3
 F1ZWFkb3NcbmF1dGhvcjogU2ltcGx5IEFzXG4iLCJoaXN0b3J5
-IjpbLTM1NDk5NzY2OF19
+IjpbLTIwODYxNzEzMTldfQ==
 -->
