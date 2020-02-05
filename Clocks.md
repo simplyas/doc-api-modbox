@@ -191,6 +191,7 @@ Retorna uma lista de relógios e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| clock_token | Obrigatório | Token do relógio |
 	
 * **Respostas:**
@@ -200,6 +201,7 @@ Retorna uma lista de relógios e suas configurações.
 	| 200 | `{"message":"Ajustes aplicados com sucesso!"}` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 402 | `{"error":"Nenhum contrato encontrado."}`|
 	| 402 | `{"error":"Nenhum token encontrade."}`|
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
@@ -211,11 +213,11 @@ Retorna uma lista de relógios e suas configurações.
   --url 'http://{{api-url}}/deleteClock' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{{"contract_hash":"{{contract_hash}}","clock_token":"{{clock_token}}"'
+  --data '{{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","clock_token":"{{clock_token}}"'
   ````
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzI3NTI0ODRdfQ==
+eyJoaXN0b3J5IjpbLTE2OTk0NDkxNTBdfQ==
 -->
