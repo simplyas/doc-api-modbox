@@ -27,6 +27,7 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de mídias on
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 
 * **Respostas:**
 	
@@ -37,6 +38,7 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de mídias on
 	| 400 | `{"error":"Informe uma hash correta."}` |
 	| 400 | `{"error":"Nenhum contrato encontrado."}` | 
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
@@ -49,3 +51,6 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de mídias on
   --data '{"contract_hash":"{{contract_hash}}"}
   ```` 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTY0MDM5OTM3Ml19
+-->
