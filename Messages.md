@@ -192,6 +192,7 @@ Retorna uma lista de mensagens (avisos curtos) e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| message_token | Obrigatório | Token da mensagem |
 	
 * **Respostas:**
@@ -201,6 +202,7 @@ Retorna uma lista de mensagens (avisos curtos) e suas configurações.
 	| 200 | `{"message":"Ajustes aplicados com sucesso!"}` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 402 | `{"error":"Nenhum contrato encontrado."}`|
 	| 402 | `{"error":"Nenhuma mensagem encontrada."}`|
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
@@ -212,11 +214,11 @@ Retorna uma lista de mensagens (avisos curtos) e suas configurações.
   --url 'http://{{api-url}}/deleteMessage' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{{"contract_hash":"{{contract_hash}}","message_token":"{{message_token}}"'
+  --data '{{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","message_token":"{{message_token}}"'
   ````
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MjExNjAwOF19
+eyJoaXN0b3J5IjpbLTIxNDE3NDQyODhdfQ==
 -->
