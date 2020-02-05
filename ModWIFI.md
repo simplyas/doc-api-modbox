@@ -33,6 +33,7 @@ Retorna uma lista de redes e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 
 * **Respostas:**
 	
@@ -42,6 +43,7 @@ Retorna uma lista de redes e suas configurações.
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
@@ -51,7 +53,7 @@ Retorna uma lista de redes e suas configurações.
   --url 'http://{{api-url}}/requestNetworks' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}"}'
   ````
 
 <br/>
@@ -78,6 +80,7 @@ Retorna uma lista de redes e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| label | Obrigatório | Identificação do recurso com no mínimo 5 e máximo 32 caracteres |
 	| name | Obrigatório | Nome da Wi-Fi com no mínimo 5 e máximo 32 caracteres |
 	| password | Opcional | Se informada, deve conter no mínimo 8 e máximo 64 caracteres |	
@@ -103,6 +106,7 @@ Retorna uma lista de redes e suas configurações.
 	| 200 | `{"message":"Ajustes aplicados com sucesso!"}` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Informe uma URL correta."}` |
 	| 400 | `{"error":"Informe o nome com 5 a 32 caracteres."}` |
 	| 400 | `{"error":"Informe o label com 5 a 32 caracteres."}` |
@@ -118,7 +122,7 @@ Retorna uma lista de redes e suas configurações.
   --url 'http://{{api-url}}/submitNetwork' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}", "label":"{{label}}", "name":"{{name}}","password":"{{password}}","auth":"{{auth}}","auth_url":"{{auth_url}}","deny_captive":"{{deny_captive}}","redirect":"{{redirect}}","max_time":"{{max_time}}","bandwidth":"{{bandwidth}}","deny_reauth":"{{deny_reauth}}","filter":"{{filter}}","deny_networks":"{{deny_networks}}","dhcp_beginning":"{{dhcp_beginning}}","dhcp_ending":"{{dhcp_ending}}","dhcp_lease":"{{dhcp_lease}}","wifi_banner":"{{wifi_banner}}","language":"{{language}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}", "label":"{{label}}", "name":"{{name}}","password":"{{password}}","auth":"{{auth}}","auth_url":"{{auth_url}}","deny_captive":"{{deny_captive}}","redirect":"{{redirect}}","max_time":"{{max_time}}","bandwidth":"{{bandwidth}}","deny_reauth":"{{deny_reauth}}","filter":"{{filter}}","deny_networks":"{{deny_networks}}","dhcp_beginning":"{{dhcp_beginning}}","dhcp_ending":"{{dhcp_ending}}","dhcp_lease":"{{dhcp_lease}}","wifi_banner":"{{wifi_banner}}","language":"{{language}}"}'
   ````
 
 <br/>
@@ -237,3 +241,6 @@ Retorna uma lista de redes e suas configurações.
 
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTc0MDI3Mzc0Nl19
+-->
