@@ -32,7 +32,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
-	
+	| user_token | Obrigatório | Token do usuário |
 	| resource | Obrigatório | Recurso deve ser: "playlist, "network", "clock", "logotype" ou "message" |
 	| group_token | Obrigatório | Token do Grupo |
 
@@ -46,6 +46,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| 400 | `{"error":"Nenhum grupo encontrado."}` |
 	| 400 | `{"error":"Verifique o recurso informado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
@@ -55,7 +56,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
   --url 'http://{{api-url}}/requestResources' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}"}, {"resource":"{{resource}}", {"group_token":"{{group_token}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}"}, {"resource":"{{resource}}", {"group_token":"{{group_token}}"}'
   ````
 
 <br/>
@@ -82,6 +83,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| resource_token | Obrigatório | Token do recurso |
 	| group_token | Obrigatório | Token do grupo |
 	| resource | Obrigatório | Recurso deve ser: "playlist, "network", "clock", "logotype" ou "message"  |
@@ -100,6 +102,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| 404 | `{"error":"Nenhum contrato encontrado."}`|
 	| 400 | `{"error":"Nenhum grupo encontrado."}` |
 	| 400 | `{"error":"Verifique o recurso informado."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
@@ -109,7 +112,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
   --url 'http://{{api-url}}/submitResource' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","contract_hash":"{{group_token}}","resource_token":"{{resource_token}}","resource":"{{resource}}","schedule":"{{schedule}}","order":"{{order}}","is_active":"{{is_active}}"}'
+  --data '{"contract_hash":"{{group_token}}", "user_token":"{{user_token}}","resource_token":"{{resource_token}}","resource":"{{resource}}","schedule":"{{schedule}}","order":"{{order}}","is_active":"{{is_active}}"}'
   ````
 
 <br/>
@@ -262,5 +265,5 @@ Retorna uma lista de agendamentos do recurso selecionado.
   ````
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NzI5Nzg5NV19
+eyJoaXN0b3J5IjpbLTMxNjU0MTM1M119
 -->
