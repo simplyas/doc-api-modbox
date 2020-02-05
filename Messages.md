@@ -31,6 +31,7 @@ Retorna uma lista de mensagens (avisos curtos) e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash da mensagem |
+	| user_token | Obrigatório | Token do usuário |
 
 * **Respostas:**
 	
@@ -39,6 +40,7 @@ Retorna uma lista de mensagens (avisos curtos) e suas configurações.
 	| 200 | ```{ "logos": [{"label": "MENSAGENS 01","image": "b79f9179287401b5cd123deced189887", "background_color": "1D1D1D","transparent": "True","extended": "False","screen_area": "80 90 100 100","screen_layer": "2","message_token": "47d6bdc1-b3d3-d3e8-a24d-7d88cfa612a1",""informations": ["Mensagem 01","Mensagem 02","Mensagem 03","Mensagem 04","Mensagem 05"]}]}``` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
+	
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
@@ -211,3 +213,6 @@ Retorna uma lista de mensagens (avisos curtos) e suas configurações.
 
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTA2NjU5NjI2Nl19
+-->
