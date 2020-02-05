@@ -55,9 +55,9 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de terminais 
   --url 'http://{{api-url}}/requestTerminals' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","terminal_token":"{{terminal_token}}"}
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","terminal_token":"{{terminal_token}}"}
   ```` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTk5OTU0MTRdfQ==
+eyJoaXN0b3J5IjpbMTQ4NjQyNjQ5OF19
 -->
