@@ -219,5 +219,7 @@ Retorna uma lista de relógios e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NTc1NjUwMF19
+eyJwcm9wZXJ0aWVzIjoidGl0bGU6IExpYmVyYWRvcyBlIEJsb3
+F1ZWFkb3NcbmF1dGhvcjogU2ltcGx5IEFzXG4iLCJoaXN0b3J5
+IjpbLTExOTkxOTg1NzQsLTU3NTc1NjUwMF19
 -->
