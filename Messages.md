@@ -40,7 +40,7 @@ Retorna uma lista de mensagens (avisos curtos) e suas configurações.
 	| 200 | ```{ "logos": [{"label": "MENSAGENS 01","image": "b79f9179287401b5cd123deced189887", "background_color": "1D1D1D","transparent": "True","extended": "False","screen_area": "80 90 100 100","screen_layer": "2","message_token": "47d6bdc1-b3d3-d3e8-a24d-7d88cfa612a1",""informations": ["Mensagem 01","Mensagem 02","Mensagem 03","Mensagem 04","Mensagem 05"]}]}``` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
-	
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
@@ -51,7 +51,7 @@ Retorna uma lista de mensagens (avisos curtos) e suas configurações.
   --url 'http://{{api-url}}/requestMessage' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}"}'
   ````
 
 <br/>
@@ -78,6 +78,7 @@ Retorna uma lista de mensagens (avisos curtos) e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |
 	| background_color | Opcional | Formato de cor hexadecimal. Ex: "1D1D1D" |
 	| font_color | Opcional | Formato de cor hexadecimal. Ex: "FFFFFF" |
@@ -95,6 +96,7 @@ Retorna uma lista de mensagens (avisos curtos) e suas configurações.
 	| 400 | `{"error":"Informe uma hash correta."}` 
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Informe o label com 1 a 32 caracteres."}` |
 	| 404 | `{"error":"Nenhum contrato encontrado."}`|
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
@@ -106,7 +108,7 @@ Retorna uma lista de mensagens (avisos curtos) e suas configurações.
   --url 'http://{{api-url}}/submitMessage' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","label":"{{label}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","informations": ["Mensagem 01","Mensagem 02","Mensagem 03","Mensagem 04","Mensagem 05"],"language":"{{language}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","label":"{{label}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","informations": ["Mensagem 01","Mensagem 02","Mensagem 03","Mensagem 04","Mensagem 05"],"language":"{{language}}"}'
   ````
 
 <br/>
@@ -132,6 +134,7 @@ Retorna uma lista de mensagens (avisos curtos) e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| message_token | Obrigatório | Token da mensagem |
 	| label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |
 	| background_color | Opcional | Formato de cor hexadecimal. Ex: "1D1D1D" |
@@ -150,6 +153,7 @@ Retorna uma lista de mensagens (avisos curtos) e suas configurações.
 	| 400 | `{"error":"Informe uma hash correta."}` 
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Informe o label com 1 a 32 caracteres."}` |
 	| 404 | `{"error":"Nenhum contrato encontrado."}`|
 	| 404 | `{"error":"Nenhuma mensagem encontradoa."}`|
@@ -162,7 +166,7 @@ Retorna uma lista de mensagens (avisos curtos) e suas configurações.
   --url 'http://{{api-url}}/updateMessage' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","message_token":"{{message_token}}","label":"{{label}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","informations": ["Mensagem 01","Mensagem 02","Mensagem 03","Mensagem 04","Mensagem 05"],"language":"{{language}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","message_token":"{{message_token}}","label":"{{label}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","informations": ["Mensagem 01","Mensagem 02","Mensagem 03","Mensagem 04","Mensagem 05"],"language":"{{language}}"}'
   ````
 
 <br/>
@@ -214,5 +218,5 @@ Retorna uma lista de mensagens (avisos curtos) e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NjU5NjI2Nl19
+eyJoaXN0b3J5IjpbMTM5MjExNjAwOF19
 -->
