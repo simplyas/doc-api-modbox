@@ -27,6 +27,7 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de terminais 
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| terminal_token | Opcional |   Retorna apenas o dispositivo |
 	| locale_timezone | Opcional | Retorna o campo formatado (Fusos horários) |
 	| locale_metric | Opcional | Versão da aplicação cliente |
@@ -44,6 +45,7 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de terminais 
 	| 400 | `{"error":"Informe uma hash correta."}` |
 	| 400 | `{"error":"Nenhum contrato encontrado."}` | 
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
@@ -56,3 +58,6 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de terminais 
   --data '{"contract_hash":"{{contract_hash}}","terminal_token":"{{terminal_token}}"}
   ```` 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1MTk5OTU0MTRdfQ==
+-->
