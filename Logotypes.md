@@ -134,6 +134,7 @@ Retorna uma lista de logomarcas e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| logo_token | Obrigatório | Token da logomarca |
 	| label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |
 	| image | Obrigatório | Hash da imagem |
@@ -152,6 +153,7 @@ Retorna uma lista de logomarcas e suas configurações.
 	| 400 | `{"error":"Informe uma hash correta."}` 
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Informe o label com 1 a 32 caracteres."}` |
 	| 404 | `{"error":"Nenhum contrato encontrado."}`|
 	| 404 | `{"error":"Nenhum token encontrado."}`|
@@ -164,7 +166,7 @@ Retorna uma lista de logomarcas e suas configurações.
   --url 'http://{{api-url}}/updateLogo' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","logo_token":"{{logo_token}}","label":"{{label}}","image":"{{image}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","language":"{{language}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","logo_token":"{{logo_token}}","label":"{{label}}","image":"{{image}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","language":"{{language}}"}'
   ````
 
 
@@ -191,6 +193,7 @@ Retorna uma lista de logomarcas e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| logo_token | Obrigatório | Token da logomarca |
 	
 * **Respostas:**
@@ -200,6 +203,7 @@ Retorna uma lista de logomarcas e suas configurações.
 	| 200 | `{"message":"Ajustes aplicados com sucesso!"}` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 402 | `{"error":"Nenhum contrato encontrado."}`|
 	| 402 | `{"error":"Nenhum token encontrade."}`|
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
@@ -211,11 +215,11 @@ Retorna uma lista de logomarcas e suas configurações.
   --url 'http://{{api-url}}/deleteLogo' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{{"contract_hash":"{{contract_hash}}","logo_token":"{{logo_token}}"'
+  --data '{{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","logo_token":"{{logo_token}}"'
   ````
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MTgxNDg5N119
+eyJoaXN0b3J5IjpbMTU3ODIyNzkxMV19
 -->
