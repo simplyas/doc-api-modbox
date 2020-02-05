@@ -2,15 +2,15 @@
 
 Este recurso permite aos gerenciar a liberação e bloqueios de dispositivos nos serviços de hostspot do contrato.
 
-- [Lista Dipositivos](Devices.md#lista-rel%C3%B3gios)
-- [Novo Dipositivo](Devices.md#novo-rel%C3%B3gio)
-- [Atualiza Dipositivo](Devices.md#atualiza-rel%C3%B3gio)
-- [Deleta Dipositivo](Devices.md#deleta-rel%C3%B3gio)
+- [Lista Dispositivos](Devices.md#lista-rel%C3%B3gios)
+- [Novo Dispositivo](Devices.md#novo-rel%C3%B3gio)
+- [Atualiza Dispositivo](Devices.md#atualiza-rel%C3%B3gio)
+- [Deleta Dispositivo](Devices.md#deleta-rel%C3%B3gio)
 ----
 <br/>
 
 
-**Lista Relógios**
+**Lista Dispositivos**
 ----
 Retorna uma lista de relógios e suas configurações.
 
@@ -57,7 +57,7 @@ Retorna uma lista de relógios e suas configurações.
 <br/>
 
 
-**Novo Relógio**
+**Novo Dispositivo**
 ----
  Recebe requisição contendo a hash do contrato e propriedades para cadastrar novo relógio.
 
@@ -112,7 +112,7 @@ Retorna uma lista de relógios e suas configurações.
 
 <br/>
 
-**Atualiza Relógio**
+**Atualiza Dispositivo**
 ----
  Recebe requisição contendo a hash do contrato, token e propriedades para atualizar um relógio.
 
@@ -170,7 +170,7 @@ Retorna uma lista de relógios e suas configurações.
 
 <br/>
 
-**Deleta Relógio**
+**Deleta Dispositivo**
 ----
   Recebe requisição contendo a hash do contrato e o token da relógio para exclusão.
 
@@ -219,5 +219,5 @@ Retorna uma lista de relógios e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NTU2NDA4MF19
+eyJoaXN0b3J5IjpbLTU3NTc1NjUwMF19
 -->
