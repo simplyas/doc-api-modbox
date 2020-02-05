@@ -51,7 +51,7 @@ Retorna uma lista de relógios e suas configurações.
   --url 'http://{{api-url}}/requestClocks' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}"}'
   ````
 
 <br/>
@@ -107,7 +107,7 @@ Retorna uma lista de relógios e suas configurações.
   --url 'http://{{api-url}}/submitClock' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","label":"{{label}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","language":"{{language}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","label":"{{label}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","language":"{{language}}"}'
   ````
 
 <br/>
@@ -133,6 +133,7 @@ Retorna uma lista de relógios e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| clock_token | Obrigatório | Token do relógio |
 	| label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |
 	| background_color | Opcional | Formato de cor hexadecimal. Ex: "1D1D1D" |
@@ -150,6 +151,7 @@ Retorna uma lista de relógios e suas configurações.
 	| 400 | `{"error":"Informe uma hash correta."}` 
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	
 	| 400 | `{"error":"Informe o label com 1 a 32 caracteres."}` |
 	| 404 | `{"error":"Nenhum contrato encontrado."}`|
 	| 404 | `{"error":"Nenhum token encontrado."}`|
@@ -215,5 +217,5 @@ Retorna uma lista de relógios e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MzI4MTQwXX0=
+eyJoaXN0b3J5IjpbODEzNjQyOTYyXX0=
 -->
