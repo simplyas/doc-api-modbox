@@ -138,6 +138,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| token | Obrigatório | Token do agendamento do recurso|
 	| resource | Obrigatório | Recurso deve ser: "playlist, "network", "clock", "logotype" ou "message" |
 	| schedule | Opcional | Json com agendamento ``` "schedule": [{"days_week":["seg","ter","qui","sex","sab"],"day_in": "","day_out": "","time": ["08:00","12:00"]}] ``` |
@@ -156,6 +157,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| 400 | `{"error":"Nenhum token encontrado."}` |
 	| 400 | `{"error":"Nenhum agendamento encontrado."}` |
 	| 400 | `{"error":"Verifique o recurso informado."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
@@ -165,7 +167,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
   --url 'http://{{api-url}}/updateResource' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","token":"{{token}}", "resource":"{{resource}}","schedule":"{{schedule}}","order":"{{order}}","is_active":"{{is_active}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","token":"{{token}}", "resource":"{{resource}}","schedule":"{{schedule}}","order":"{{order}}","is_active":"{{is_active}}"}'
   ````
 
 <br/>
@@ -191,6 +193,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| token | Obrigatório | Token do agendamento do recurso |
 	| resource | Obrigatório | Recurso deve ser: "playlist, "network", "clock", "logotype" ou "message"  |
 	
@@ -204,6 +207,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| 402 | `{"error":"Nenhum contrato encontrado."}`|
 	| 402 | `{"error":"Nenhum token encontrado."}`|
 	| 402 | `{"error":"Nenhum agendamento encontrado."}`|
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
@@ -213,7 +217,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
   --url 'http://{{api-url}}/deleteResource' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","token":"{{token}}","resource":"{{resource}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","token":"{{token}}","resource":"{{resource}}"}'
   ````
 
 <br/>
@@ -239,6 +243,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| resource | Obrigatório | Recurso deve ser: "playlist, "network", "clock", "logotype" ou "message"  |
 	| resources_list | Obrigatório | Lista de agendamentos ```` "resources":[{"token": "b2f1f9b7-52cd-5412-9ac0-c34x2aa64bf6","order": 0},{"token": "bec6532f-8e87-8379-bf8b-b869843g8dc6","order": 1},{"token": "19876e3e-faed-a0ab-10c3-fe67afc97a72","order": 2}] ````  |
 	
@@ -252,6 +257,7 @@ Retorna uma lista de agendamentos do recurso selecionado.
 	| 402 | `{"error":"Nenhum contrato encontrado."}`|
 	| 402 | `{"error":"Nenhum token encontrado."}`|
 	| 402 | `{"error":"Nenhum agendamento encontrado."}`|
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
@@ -261,9 +267,9 @@ Retorna uma lista de agendamentos do recurso selecionado.
   --url 'http://{{api-url}}/reorderResource' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","resources":"{{resources}}","resource":"{{resource}}","resource":"{{resource}}","resources_list":"{{resources_list}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","resources":"{{resources}}","resource":"{{resource}}","resource":"{{resource}}","resources_list":"{{resources_list}}"}'
   ````
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNjU0MTM1M119
+eyJoaXN0b3J5IjpbLTE5ODQ0ODc2NjVdfQ==
 -->
