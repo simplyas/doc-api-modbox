@@ -26,6 +26,7 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de canais de 
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 
 * **Respostas:**
 	
@@ -33,6 +34,7 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de canais de 
 	|--|--|
 	| 200 | ```{"channels":[{"name":"Clima","description":"","type":"content","language":"pt","url":"weatherBrazil","token":"7979f5ef-956d-4c96-ae6a-7f7e9a19bae1"}]}``` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Informe uma hash correta."}` |
 	| 400 | `{"error":"Nenhum contrato encontrado."}` | 
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
@@ -45,6 +47,9 @@ Recebe requisição contendo a hash do contrato. Retorna uma lista de canais de 
   --url 'http://{{api-url}}/getContents' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}"}
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}"}
   ```` 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTc3NTU0MjgwM119
+-->
