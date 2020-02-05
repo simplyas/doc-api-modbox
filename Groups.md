@@ -31,6 +31,7 @@ Retorna uma lista de grupos e seus terminais.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 
 * **Respostas:**
 	
@@ -40,6 +41,7 @@ Retorna uma lista de grupos e seus terminais.
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
@@ -201,3 +203,6 @@ Retorna uma lista de grupos e seus terminais.
 
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyMzU4MzE1MzldfQ==
+-->
