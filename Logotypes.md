@@ -78,6 +78,7 @@ Retorna uma lista de logomarcas e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |
 	| image | Obrigatório | Hash da imagem |
 	| background_color | Opcional | Formato de cor hexadecimal. Ex: "1D1D1D" |
@@ -95,6 +96,7 @@ Retorna uma lista de logomarcas e suas configurações.
 	| 400 | `{"error":"Informe uma hash correta."}` 
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Informe o label com 1 a 32 caracteres."}` |
 	| 404 | `{"error":"Nenhum contrato encontrado."}`|
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
@@ -106,7 +108,7 @@ Retorna uma lista de logomarcas e suas configurações.
   --url 'http://{{api-url}}/submitLogo' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","label":"{{label}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","language":"{{language}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","label":"{{label}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","language":"{{language}}"}'
   ````
 
 <br/>
@@ -215,5 +217,5 @@ Retorna uma lista de logomarcas e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzE2MzMzMzFdfQ==
+eyJoaXN0b3J5IjpbLTQ1MTgxNDg5N119
 -->
