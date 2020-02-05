@@ -31,6 +31,7 @@ Retorna uma lista de logomarcas e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 
 * **Respostas:**
 	
@@ -39,6 +40,7 @@ Retorna uma lista de logomarcas e suas configurações.
 	| 200 | ```{ "logos": [{"label": "LOGO","image": "b79f9179287401b5cd123deced189887", "background_color": "1D1D1D","transparent": "True","extended": "False","screen_area": "80 90 100 100","screen_layer": "2","logotype_token": "47d6bdc1-b3d3-d3e8-a24d-7d88cfa612a1"}]}``` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
@@ -49,7 +51,7 @@ Retorna uma lista de logomarcas e suas configurações.
   --url 'http://{{api-url}}/requestLogos' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}"}'
   ````
 
 <br/>
@@ -212,3 +214,6 @@ Retorna uma lista de logomarcas e suas configurações.
 
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5NzE2MzMzMzFdfQ==
+-->
