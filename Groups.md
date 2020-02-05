@@ -2,9 +2,9 @@
 
 Este recurso permite gestão de grupos para organização dos recursos no sistema.
 
-- [Lista Grupos](Groups.md#lista-grupos)
-- [Novo Grupo](Groups.md#novo-grupo)
-- [Atualiza Grupo](Groups.md#atualiza-grupo)
+- [Lista Localidades](#lista-localidades)
+- [Nova Localidade](nova-localidade)
+- [Atualiza Localidade](atualiza-localidade)
 - [Deleta Grupo](Groups.md#deleta-grupo)
 ----
 <br/>
@@ -12,7 +12,7 @@ Este recurso permite gestão de grupos para organização dos recursos no sistem
 
 **Lista Localidades**
 ----
-Retorna uma lista de grupos e seus terminais.
+Retorna uma lista de localidades e seus terminais.
 
 * **URL**
 
@@ -37,7 +37,7 @@ Retorna uma lista de grupos e seus terminais.
 	
 	|Código| Resposta |
 	|--|--|
-	| 200 | ```{"group_name":"GRUPO","group_token":"3f7f681b-33b8-4595-82cc-41094a9333fc","terminals":[{"terminal_name":"TV1","terminal_token":"d24f88e6-6466-49f3-9156-58a295cb5f33","internet_address":"187.185.80.228"}]}``` |
+	| 200 | ```{"group_name":"LOCALIADADE","group_token":"3f7f681b-33b8-4595-82cc-41094a9333fc","terminals":[{"terminal_name":"TV1","terminal_token":"d24f88e6-6466-49f3-9156-58a295cb5f33","internet_address":"187.185.80.228"}]}``` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
@@ -59,7 +59,7 @@ Retorna uma lista de grupos e seus terminais.
 
 **Nova Localidade**
 ----
- Recebe requisição contendo a hash do contrato e propriedades para cadastrar novo grupo.
+ Recebe requisição contendo a hash do contrato e propriedades para cadastrar nova localidade.
 
 * **URL**
 
@@ -79,7 +79,7 @@ Retorna uma lista de grupos e seus terminais.
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
 	| user_token | Obrigatório | Token do usuário |
-	| name | Obrigatório | Identificação do grupo com no mínimo 3 e máximo 30 caracteres |
+	| name | Obrigatório | Identificação da localidade com no mínimo 3 e máximo 30 caracteres |
 	| terminals | Opcional | ``["d24f88e6-6466-49f3-9156-58a295cb5f33"]`` |
 	| language | Opcional |  |
 
@@ -87,7 +87,7 @@ Retorna uma lista de grupos e seus terminais.
 	
 	|Código| Resposta |
 	|--|--|
-	| 200 | `{"message":"Localidade criado com sucesso!","group_token":"d24f88e6-6466-49f3-9156-58a295cb5f33"}` |
+	| 200 | `{"message":"Localidade criada com sucesso!","group_token":"d24f88e6-6466-49f3-9156-58a295cb5f33"}` |
 	| 400 | `{"error":"Informe uma hash correta."}` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
@@ -210,5 +210,5 @@ Retorna uma lista de grupos e seus terminais.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1OTE5NTgwOF19
+eyJoaXN0b3J5IjpbNTgyNDA1NTJdfQ==
 -->
