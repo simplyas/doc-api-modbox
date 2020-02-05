@@ -87,13 +87,13 @@ Retorna uma lista de grupos e seus terminais.
 	
 	|Código| Resposta |
 	|--|--|
-	| 200 | `{"message":"Grupo criado com sucesso!","group_token":"d24f88e6-6466-49f3-9156-58a295cb5f33"}` |
+	| 200 | `{"message":"Localidade criado com sucesso!","group_token":"d24f88e6-6466-49f3-9156-58a295cb5f33"}` |
 	| 400 | `{"error":"Informe uma hash correta."}` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
 	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Informe o label com 3 a 30 caracteres."}` |
-	| 409 | `{"error":"Existe outro grupo com o mesmo nome. Escolha um nome diferente."}` |
+	| 409 | `{"error":"Existe outra localidade com o mesmo nome. Escolha um nome diferente."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
@@ -110,7 +110,7 @@ Retorna uma lista de grupos e seus terminais.
 
 **Atualiza Localidade**
 ----
- Recebe requisição contendo a hash do contrato e propriedades para atualizar um grupo.
+ Recebe requisição contendo a hash do contrato e propriedades para atualizar uma localidade.
 
 * **URL**
 
@@ -130,8 +130,8 @@ Retorna uma lista de grupos e seus terminais.
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
 	| user_token | Obrigatório | Token do usuário |
-	| group_token | Obrigatório | Token do grupo |
-	| name | Opcional | Identificação do grupo com no mínimo 3 e máximo 30 caracteres |
+	| group_token | Obrigatório | Token da localidade |
+	| name | Opcional | Identificação da localidade com no mínimo 3 e máximo 30 caracteres |
 	| terminals | Opcional | ``["d24f88e6-6466-49f3-9156-58a295cb5f33"]`` |
 	| language | Opcional |  |
 
@@ -139,14 +139,14 @@ Retorna uma lista de grupos e seus terminais.
 	
 	|Código| Resposta |
 	|--|--|
-	| 200 | `{"message":"Grupo criado com sucesso!"}` |
+	| 200 | `{"message":"Localidade criado com sucesso!"}` |
 	| 400 | `{"error":"Informe uma hash correta."}` |
-	| 400 | `{"error":"Nenhum grupo encontrato."}` |
+	| 400 | `{"error":"Nenhuma localidade encontrata."}` |
 	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
 	| 400 | `{"error":"Informe o label com 3 a 30 caracteres."}` |
-	| 409 | `{"error":"Existe outro grupo com o mesmo nome. Escolha um nome diferente."}` |
+	| 409 | `{"error":"Existe outra localidade com o mesmo nome. Escolha um nome diferente."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
@@ -163,7 +163,7 @@ Retorna uma lista de grupos e seus terminais.
 
 **Deleta Localidade**
 ----
-  Recebe requisição contendo a hash do contrato e o token da loca para exclusão.
+  Recebe requisição contendo a hash do contrato e o token da localidade para exclusão.
 
 * **URL**
 
@@ -183,7 +183,7 @@ Retorna uma lista de grupos e seus terminais.
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
 	| user_token | Obrigatório | Token do usuário |
-	| group_token | Obrigatório | Token do relógio |
+	| group_token | Obrigatório | Token da localidade |
 	
 * **Respostas:**
 	
@@ -210,5 +210,5 @@ Retorna uma lista de grupos e seus terminais.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MzUxMTIzOF19
+eyJoaXN0b3J5IjpbMTc1OTE5NTgwOF19
 -->
