@@ -3,10 +3,10 @@
 
 Este recurso permite liberar e bloquear dispositivos no serviço hotspot do contrato.
 
-- [Lista Dispositivo](Clocks.md#lista-rel%C3%B3gios)
-- [Novo Relógio](Clocks.md#novo-rel%C3%B3gio)
-- [Atualiza Relógio](Clocks.md#atualiza-rel%C3%B3gio)
-- [Deleta Relógio](Clocks.md#deleta-rel%C3%B3gio)
+- [Lista Dispositivos](Clocks.md#lista-rel%C3%B3gios)
+- [Novo Dispositivo](Clocks.md#novo-rel%C3%B3gio)
+- [Atualiza Dispositivo](Clocks.md#atualiza-rel%C3%B3gio)
+- [Deleta Dispositivo](Clocks.md#deleta-rel%C3%B3gio)
 ----
 <br/>
 
@@ -222,5 +222,5 @@ Retorna uma lista de relógios e suas configurações.
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IExpYmVyYWRvcyBlIEJsb3
 F1ZWFkb3NcbmF1dGhvcjogU2ltcGx5IEFzXG4iLCJoaXN0b3J5
-IjpbLTIwODYxNzEzMTldfQ==
+IjpbMTgxMzE3MzU4NF19
 -->
