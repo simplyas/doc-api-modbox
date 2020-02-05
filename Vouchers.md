@@ -2,10 +2,10 @@
 
 Este recurso permite aos gerenciar a liberação e bloqueios de dispositivos nos serviços de hostspot do contrato com a utilização de vouchers.
 
-- [Lista Voucher](Clocks.md#lista-rel%C3%B3gios)
-- [Novo Relógio](Clocks.md#novo-rel%C3%B3gio)
-- [Atualiza Relógio](Clocks.md#atualiza-rel%C3%B3gio)
-- [Deleta Relógio](Clocks.md#deleta-rel%C3%B3gio)
+- [Lista Vouchers](Vouchers.md#lista-rel%C3%B3gios)
+- [Novo Voucher](Vouchers.md#novo-rel%C3%B3gio)
+- [Atualiza Voucher](Vouchers.md#atualiza-rel%C3%B3gio)
+- [Deleta Voucher](Vouchers.md#deleta-rel%C3%B3gio)
 ----
 <br/>
 
@@ -219,5 +219,5 @@ Retorna uma lista de relógios e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MjkyOTA1NV19
+eyJoaXN0b3J5IjpbNTcyNjgxMzcxXX0=
 -->
