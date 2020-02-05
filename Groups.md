@@ -1,6 +1,6 @@
-# Localidades
+# Localidades do Contrato
 
-Este recurso permite gestão de grupos para organização dos recursos no sistema.
+Este recurso permite gestão de localidades para organização dos recursos no sistema.
 
 - [Lista Localidades](#lista-localidades)
 - [Nova Localidade](nova-localidade)
@@ -210,5 +210,5 @@ Retorna uma lista de localidades e seus terminais.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MDU0NTA3OF19
+eyJoaXN0b3J5IjpbLTcwOTQ4MzIyNF19
 -->
