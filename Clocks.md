@@ -151,7 +151,7 @@ Retorna uma lista de relógios e suas configurações.
 	| 400 | `{"error":"Informe uma hash correta."}` 
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
-	
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Informe o label com 1 a 32 caracteres."}` |
 	| 404 | `{"error":"Nenhum contrato encontrado."}`|
 	| 404 | `{"error":"Nenhum token encontrado."}`|
@@ -164,7 +164,7 @@ Retorna uma lista de relógios e suas configurações.
   --url 'http://{{api-url}}/updateClock' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","clock_token":"{{clock_token}}","label":"{{label}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","language":"{{language}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","clock_token":"{{clock_token}}","label":"{{label}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","language":"{{language}}"}'
   ````
 
 
@@ -217,5 +217,5 @@ Retorna uma lista de relógios e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODEzNjQyOTYyXX0=
+eyJoaXN0b3J5IjpbLTIxMzI3NTI0ODRdfQ==
 -->
