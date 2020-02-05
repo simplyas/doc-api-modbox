@@ -31,7 +31,7 @@ Retorna uma lista de playlists e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
-	
+	| user_token | Obrigatório | Token do usuário |
 
 * **Respostas:**
 	
@@ -41,6 +41,7 @@ Retorna uma lista de playlists e suas configurações.
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
@@ -50,7 +51,7 @@ Retorna uma lista de playlists e suas configurações.
   --url 'http://{{api-url}}/requestPlaylists' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}"}'
   ````
 
 <br/>
@@ -77,6 +78,7 @@ Retorna uma lista de playlists e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |
 	| random | Opcional | "True"/"False" |
 	| looping | Opcional | "True"/"False" |
@@ -99,6 +101,7 @@ Retorna uma lista de playlists e suas configurações.
 	| 400 | `{"error":"Informe uma hash correta."}` 
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Informe o label com 1 a 32 caracteres."}` |
 	| 400 | `{"error":"O campo orientation aceita apenas: 0, 90, 180 ou 270."}` | 
 	| 404 | `{"error":"Nenhum contrato encontrado."}`|
@@ -111,7 +114,7 @@ Retorna uma lista de playlists e suas configurações.
   --url 'http://{{api-url}}/submitPlaylist' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","label": "{{label}}", "random": "{{random}}","looping": "{{looping}}","mute": "{{mute}}","duration_live": "{{duration_live}}","instagram": "{{instagram}}","rss": "{{rss}}","orientation": "{{orientation}}","led": "{{led}}", "videowall": "{{videowall}}", "files": [{{file_name}}],"terminals": ["{{mac_address}}"],"language":"{{language}}"}'````
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","label": "{{label}}", "random": "{{random}}","looping": "{{looping}}","mute": "{{mute}}","duration_live": "{{duration_live}}","instagram": "{{instagram}}","rss": "{{rss}}","orientation": "{{orientation}}","led": "{{led}}", "videowall": "{{videowall}}", "files": [{{file_name}}],"terminals": ["{{mac_address}}"],"language":"{{language}}"}'````
 
 <br/>
 
@@ -136,6 +139,7 @@ Retorna uma lista de playlists e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
 	| playlist_token | Obrigatório | Token da playlist |
 	| label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |
 	| random | Opcional | "True"/"False" |
@@ -159,6 +163,7 @@ Retorna uma lista de playlists e suas configurações.
 	| 400 | `{"error":"Informe uma hash correta."}` 
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Informe o label com 1 a 32 caracteres."}` |
 	| 400 | `{"error":"O campo orientation aceita apenas: 0, 90, 180 ou 270."}` | 
 	| 404 | `{"error":"Nenhum contrato encontrado."}`|
@@ -172,7 +177,7 @@ Retorna uma lista de playlists e suas configurações.
   --url 'http://{{api-url}}/updatePlaylist' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}","playlist_token":"{{playlist_token}}","label": "{{label}}", "random": "{{random}}","looping": "{{looping}}","mute": "{{mute}}","duration_live": "{{duration_live}}","instagram": "{{instagram}}","rss": "{{rss}}","orientation": "{{orientation}}","led": "{{led}}", "videowall": "{{videowall}}", "files": [{{file_name}}],"terminals": ["{{mac_address}}"],"language":"{{language}}"}'````
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","playlist_token":"{{playlist_token}}","label": "{{label}}", "random": "{{random}}","looping": "{{looping}}","mute": "{{mute}}","duration_live": "{{duration_live}}","instagram": "{{instagram}}","rss": "{{rss}}","orientation": "{{orientation}}","led": "{{led}}", "videowall": "{{videowall}}", "files": [{{file_name}}],"terminals": ["{{mac_address}}"],"language":"{{language}}"}'````
 
 <br/>
 
@@ -197,6 +202,7 @@ Retorna uma lista de playlists e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	
 	| playlist_token | Obrigatório | Token da playlist |
 	
 * **Respostas:**
@@ -223,5 +229,5 @@ Retorna uma lista de playlists e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MTgwMDU1Nl19
+eyJoaXN0b3J5IjpbMTQ5NjIzNjM1Ml19
 -->
