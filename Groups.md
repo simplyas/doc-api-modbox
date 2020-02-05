@@ -1,4 +1,4 @@
-# Grupos
+# Localidades
 
 Este recurso permite gestão de grupos para organização dos recursos no sistema.
 
@@ -10,7 +10,7 @@ Este recurso permite gestão de grupos para organização dos recursos no sistem
 <br/>
 
 
-**Lista Grupos**
+**Lista Localidades**
 ----
 Retorna uma lista de grupos e seus terminais.
 
@@ -57,7 +57,7 @@ Retorna uma lista de grupos e seus terminais.
 <br/>
 
 
-**Novo Grupo**
+**Nova Localidade**
 ----
  Recebe requisição contendo a hash do contrato e propriedades para cadastrar novo grupo.
 
@@ -108,7 +108,7 @@ Retorna uma lista de grupos e seus terminais.
 
 <br/>
 
-**Atualiza Grupo**
+**Atualiza Localidade**
 ----
  Recebe requisição contendo a hash do contrato e propriedades para atualizar um grupo.
 
@@ -161,9 +161,9 @@ Retorna uma lista de grupos e seus terminais.
 
 <br/>
 
-**Deleta Grupo**
+**Deleta Localidade**
 ----
-  Recebe requisição contendo a hash do contrato e o token do grupo para exclusão.
+  Recebe requisição contendo a hash do contrato e o token da loca para exclusão.
 
 * **URL**
 
@@ -210,5 +210,5 @@ Retorna uma lista de grupos e seus terminais.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NTY1MTMyM119
+eyJoaXN0b3J5IjpbLTI5MzUxMTIzOF19
 -->
