@@ -5,7 +5,7 @@ Este recurso permite gestão de grupos para organização dos recursos no sistem
 - [Lista Localidades](#lista-localidades)
 - [Nova Localidade](nova-localidade)
 - [Atualiza Localidade](atualiza-localidade)
-- [Deleta Grupo](Groups.md#deleta-grupo)
+- [Deleta localidade](deleta-localidade)
 ----
 <br/>
 
@@ -210,5 +210,5 @@ Retorna uma lista de localidades e seus terminais.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgyNDA1NTJdfQ==
+eyJoaXN0b3J5IjpbMTc3MDU0NTA3OF19
 -->
