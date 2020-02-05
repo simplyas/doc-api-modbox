@@ -1,4 +1,4 @@
-# Mod Wifi - Vouchers
+# Mod Wifi - Liberados e Bloqueados
 
 Este recurso permite aos equipamentos Modbox exibir um relógio personalizado na tela.
 
@@ -219,5 +219,5 @@ Retorna uma lista de relógios e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU3NjIzMDkyXX0=
+eyJoaXN0b3J5IjpbLTE2OTYwNTE5Nl19
 -->
