@@ -31,6 +31,7 @@ Retorna uma lista de playlists e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
+	
 
 * **Respostas:**
 	
@@ -221,3 +222,6 @@ Retorna uma lista de playlists e suas configurações.
 
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTQ3MTgwMDU1Nl19
+-->
