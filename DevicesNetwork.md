@@ -11,13 +11,13 @@ Este recurso permite liberar e bloquear dispositivos no serviço hotspot do cont
 <br/>
 
 
-**Lista Relógios**
+**Lista Dispositivos**
 ----
-Retorna uma lista de relógios e suas configurações.
+Retorna uma lista de dispositiivos e suas configurações.
 
 * **URL**
 
-  {{api-url}}/requestClocks
+  {{api-url}}/requestDeice
 
 * **Método HTTP:**
 
@@ -222,5 +222,5 @@ Retorna uma lista de relógios e suas configurações.
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IExpYmVyYWRvcyBlIEJsb3
 F1ZWFkb3NcbmF1dGhvcjogU2ltcGx5IEFzXG4iLCJoaXN0b3J5
-IjpbLTEwMjQ2NjI0MThdfQ==
+IjpbLTk0NzY0NTYzNiwtMTAyNDY2MjQxOF19
 -->
