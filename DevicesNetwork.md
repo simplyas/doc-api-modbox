@@ -13,11 +13,11 @@ Este recurso permite liberar e bloquear dispositivos no serviço hotspot do cont
 
 **Lista Dispositivos**
 ----
-Retorna uma lista de dispositiivos e suas configurações.
+Retorna uma lista de dispositivos e suas configurações.
 
 * **URL**
 
-  {{api-url}}/requestDeice
+  {{api-url}}/requestDevicesNetworks
 
 * **Método HTTP:**
 
@@ -222,5 +222,5 @@ Retorna uma lista de dispositiivos e suas configurações.
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IExpYmVyYWRvcyBlIEJsb3
 F1ZWFkb3NcbmF1dGhvcjogU2ltcGx5IEFzXG4iLCJoaXN0b3J5
-IjpbLTk0NzY0NTYzNiwtMTAyNDY2MjQxOF19
+IjpbNTY0OTE1NTUxLC0xMDI0NjYyNDE4XX0=
 -->
