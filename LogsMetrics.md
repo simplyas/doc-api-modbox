@@ -2,11 +2,11 @@
 
 Coleção de métodos para consulta de logs e métricas dos recursos do contrato.
 
-- [Dados da Wifi](#)
+- [Logs de Acessos da Wifi](#)
 - [Logs de Exibição de Mídias](#)
 - [Logs do Histórico de Terminais](#)
-- [Métricas para ](#)
-- [Deleta Relógio](#)
+- [Métricas de Acessos do Wifi para Dashboard](#)
+- [Métricas do Wifi](#)
 ----
 <br/>
 
@@ -220,6 +220,5 @@ Retorna uma lista de relógios e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDc1MjUyMDIsLTEwNzI4NDYwMDddfQ
-==
+eyJoaXN0b3J5IjpbNjQ3OTI5NzQwLC0xMDcyODQ2MDA3XX0=
 -->
