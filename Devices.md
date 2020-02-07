@@ -210,14 +210,14 @@ Retorna uma lista de dispositivos e suas configurações.
 	
 	````curl
 	curl --request POST \
-  --url 'http://{{api-url}}/deleteClock' \
+  --url 'http://{{api-url}}/deleteDevicesNetwork' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","clock_token":"{{clock_token}}"'
+  --data '{{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","devices_network_token":"{{devices_network_token}}"'
   ````
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMDMxNTI2Ml19
+eyJoaXN0b3J5IjpbLTgwMTY4MTcyOV19
 -->
