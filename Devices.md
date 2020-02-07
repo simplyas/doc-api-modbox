@@ -133,12 +133,9 @@ Retorna uma lista de dispositivos e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
-	| user_token | Obrigatório | Token do usuário | devices_network_token
-	| user_token | Obrigatório | Token do usuário | devices_network_token
+	| user_token | Obrigatório | Token do usuário | 
+	| devices_network_token | Obrigatório | Token do dispositivo | 
 	| label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |
-	| is_banned | Opcional | "True"/"False" |
-	| phone_number | Opcional | Número do device |
-	| mac_address | Opcional | Mac address do device |
 	| groups | Obrigatório | Lista de localidades afetadas |
 	| expires | Opcional | Tempo de expiração do device |
 	| validity_after_activation | Opcional |  Tempo de que o device fica disponível após ativação |
@@ -153,6 +150,7 @@ Retorna uma lista de dispositivos e suas configurações.
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
 	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Informe o label com 1 a 32 caracteres."}` |
+	| 400 | `{"error":"A validade apos ativacao deve ser ate 604800 segundos (7 dias)."}` |
 	| 404 | `{"error":"Nenhum contrato encontrado."}`|
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
@@ -218,5 +216,5 @@ Retorna uma lista de dispositivos e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzE4NDAxNjcsLTgwMTY4MTcyOV19
+eyJoaXN0b3J5IjpbNzQyMTIyMzA2LC04MDE2ODE3MjldfQ==
 -->
