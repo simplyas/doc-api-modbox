@@ -161,7 +161,7 @@ Retorna uma lista de dispositivos e suas configurações.
   --url 'http://{{api-url}}/submitClock' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","label":"{{label}}","is_banned":"{{is_banned}}","phone_number":"{{phone_number}}","mac_address":"{{mac_address}}","groups":"{{groups}}","expires":"{{expires}}","validity_after_activation":"{{validity_after_activation}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","label":"{{label}}","devices_network_token":"{{devices_network_token}}","groups":"{{groups}}","expires":"{{expires}}","validity_after_activation":"{{validity_after_activation}}"}'
   ````
 
 
@@ -216,5 +216,5 @@ Retorna uma lista de dispositivos e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQyMTIyMzA2LC04MDE2ODE3MjldfQ==
+eyJoaXN0b3J5IjpbOTEwMTQ1NTQ4LC04MDE2ODE3MjldfQ==
 -->
