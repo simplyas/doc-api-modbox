@@ -81,10 +81,10 @@ Retorna uma lista de dispositivos e suas configurações.
 	| user_token | Obrigatório | Token do usuário |
 	| label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |
 	| is_banned | Opcional | "True"/"False" |
-	| phone_number | Opcional | Formato de cor hexadecimal. Ex: "FFFFFF" |
-	| transparent | Opcional | "True"/"False" |
-	| screen_area | Opcional | Ex: "0 90 20 100" |
-	| screen_layer | Opcional | Valor numérico. Ex: "3" |
+	| phone_number | Opcional | Número do device |
+	| mac_address | Opcional | Mac address do device |
+	| groups | Obrigatório | Lista de localidades afetadas |
+	| expires | Opcional | Tempo de expiração do device |
 	| language | Opcional |  |
 
 * **Respostas:**
@@ -219,5 +219,5 @@ Retorna uma lista de dispositivos e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjQyNTQ4NDcsLTgwMTY4MTcyOV19
+eyJoaXN0b3J5IjpbLTk1NzUwMjE5OCwtODAxNjgxNzI5XX0=
 -->
