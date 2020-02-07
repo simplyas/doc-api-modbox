@@ -169,7 +169,7 @@ Retorna uma lista de dispositivos e suas configurações.
 
 **Deleta Dispositivo**
 ----
-  Recebe requisição contendo a hash do contrato e o token da relógio para exclusão.
+  Recebe requisição contendo a hash do contrato e o token do dispositivo para exclusão.
 
 * **URL**
 
@@ -216,5 +216,5 @@ Retorna uma lista de dispositivos e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEwMTQ1NTQ4LC04MDE2ODE3MjldfQ==
+eyJoaXN0b3J5IjpbMTYyMTkwMTIwOCwtODAxNjgxNzI5XX0=
 -->
