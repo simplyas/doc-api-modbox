@@ -176,7 +176,7 @@ Retorna uma lista de dispositivos e suas configurações.
 
 * **URL**
 
-  {{api-url}}/deleteClock
+  {{api-url}}/deleteDevicesNetwork
 
 * **Método HTTP:**
 
@@ -192,7 +192,7 @@ Retorna uma lista de dispositivos e suas configurações.
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
 	| user_token | Obrigatório | Token do usuário |
-	| clock_token | Obrigatório | Token do relógio |
+	| devices_network_token | Obrigatório | Token do device |
 	
 * **Respostas:**
 	
@@ -219,5 +219,5 @@ Retorna uma lista de dispositivos e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDg3MTg0Nl19
+eyJoaXN0b3J5IjpbMTUxMDMxNTI2Ml19
 -->
