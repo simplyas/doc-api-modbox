@@ -59,11 +59,11 @@ Retorna uma lista de dispositivos e suas configurações.
 
 **Novo Dispositivo**
 ----
- Recebe requisição contendo a hash do contrato e propriedades para cadastrar novo relógio.
+ Recebe requisição contendo a hash do contrato e propriedades para cadastrar novo device.
 
 * **URL**
 
-  {{api-url}}/submitClock
+  {{api-url}}/submitDevicesNetwork
 
 * **Método HTTP:**
 
@@ -80,8 +80,8 @@ Retorna uma lista de dispositivos e suas configurações.
 	| contract_hash | Obrigatório | Hash do contrato |
 	| user_token | Obrigatório | Token do usuário |
 	| label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |
-	| background_color | Opcional | Formato de cor hexadecimal. Ex: "1D1D1D" |
-	| font_color | Opcional | Formato de cor hexadecimal. Ex: "FFFFFF" |
+	| is_banned | Opcional | "True"/"False" |
+	| phone_number | Opcional | Formato de cor hexadecimal. Ex: "FFFFFF" |
 	| transparent | Opcional | "True"/"False" |
 	| screen_area | Opcional | Ex: "0 90 20 100" |
 	| screen_layer | Opcional | Valor numérico. Ex: "3" |
@@ -219,5 +219,5 @@ Retorna uma lista de dispositivos e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNDAyOTAwMywtODAxNjgxNzI5XX0=
+eyJoaXN0b3J5IjpbLTExMjQyNTQ4NDcsLTgwMTY4MTcyOV19
 -->
