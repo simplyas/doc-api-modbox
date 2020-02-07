@@ -6,10 +6,9 @@ Coleção de métodos para consulta de logs e métricas dos recursos do contrato
 - [Logs de Exibição de Mídias](#)
 - [Logs do Histórico de Terminais](#)
 - [Métricas de Acessos do Wifi para Dashboard](#)
-- [Métricas de Exibição de Mídias](#)
+
 ----
 <br/>
-
 
 **Logs de Acessos da Wifi**
 ----
@@ -19,11 +18,6 @@ Coleção de métodos para consulta de logs e métricas dos recursos do contrato
 ----
 **Métricas do Wifi para Dashboard**
 ----
-**Logs de Exibição de Mídias**
-----
-**Logs de Exibição de Mídias**
-----
-
 
 Retorna uma lista de relógios e suas configurações.
 
@@ -232,6 +226,6 @@ Retorna uma lista de relógios e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM4Nzg2NDAsNjQ3OTI5NzQwLC0xMDcyOD
-Q2MDA3XX0=
+eyJoaXN0b3J5IjpbLTcxNjQxNTE1OCw2NDc5Mjk3NDAsLTEwNz
+I4NDYwMDddfQ==
 -->
