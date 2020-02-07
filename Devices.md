@@ -59,7 +59,7 @@ Retorna uma lista de dispositivos e suas configurações.
 
 **Novo Dispositivo**
 ----
- Recebe requisição contendo a hash do contrato e propriedades para cadastrar novo device.
+ Recebe requisição contendo a hash do contrato e propriedades para cadastrar novo dispositivo.
 
 * **URL**
 
@@ -114,11 +114,11 @@ Retorna uma lista de dispositivos e suas configurações.
 
 **Atualiza Dispositivo**
 ----
- Recebe requisição contendo a hash do contrato, token e propriedades para atualizar um relógio.
+ Recebe requisição contendo a hash do contrato, token e propriedades para atualizar um dispositivo.
 
 * **URL**
 
-  {{api-url}}/updateClock
+  {{api-url}}/updateDevicesNetwork
 
 * **Método HTTP:**
 
@@ -133,15 +133,15 @@ Retorna uma lista de dispositivos e suas configurações.
 	| Parâmetro | Recurso | Observação |
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
-	| user_token | Obrigatório | Token do usuário |
-	| clock_token | Obrigatório | Token do relógio |
+	| user_token | Obrigatório | Token do usuário | devices_network_token
+	| user_token | Obrigatório | Token do usuário | devices_network_token
 	| label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |
-	| background_color | Opcional | Formato de cor hexadecimal. Ex: "1D1D1D" |
-	| font_color | Opcional | Formato de cor hexadecimal. Ex: "FFFFFF" |
-	| transparent | Opcional | "True"/"False" |
-	| screen_area | Opcional | Ex: "0 90 20 100" |
-	| screen_layer | Opcional | Valor numérico. Ex: "3" |
-	| language | Opcional |  |
+	| is_banned | Opcional | "True"/"False" |
+	| phone_number | Opcional | Número do device |
+	| mac_address | Opcional | Mac address do device |
+	| groups | Obrigatório | Lista de localidades afetadas |
+	| expires | Opcional | Tempo de expiração do device |
+	| validity_after_activation | Opcional |  Tempo de que o device fica disponível após ativação |
 
 * **Respostas:**
 	
@@ -154,17 +154,16 @@ Retorna uma lista de dispositivos e suas configurações.
 	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Informe o label com 1 a 32 caracteres."}` |
 	| 404 | `{"error":"Nenhum contrato encontrado."}`|
-	| 404 | `{"error":"Nenhum token encontrado."}`|
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
 
 * **Exemplo:**
 	
 	````curl
 	curl --request POST \
-  --url 'http://{{api-url}}/updateClock' \
+  --url 'http://{{api-url}}/submitClock' \
   --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","clock_token":"{{clock_token}}","label":"{{label}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","language":"{{language}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","label":"{{label}}","is_banned":"{{is_banned}}","phone_number":"{{phone_number}}","mac_address":"{{mac_address}}","groups":"{{groups}}","expires":"{{expires}}","validity_after_activation":"{{validity_after_activation}}"}'
   ````
 
 
@@ -219,5 +218,5 @@ Retorna uma lista de dispositivos e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMDU0MjUxLC04MDE2ODE3MjldfQ==
+eyJoaXN0b3J5IjpbLTE2NzE4NDAxNjcsLTgwMTY4MTcyOV19
 -->
