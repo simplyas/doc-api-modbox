@@ -12,11 +12,11 @@ Este recurso permite gerenciar dispositivos no hotspot do contrato.
 
 **Lista Dispositivos**
 ----
-Retorna uma lista de relógios e suas configurações.
+Retorna uma lista de dispositivos e suas configurações.
 
 * **URL**
 
-  {{api-url}}/requestClocks
+  {{api-url}}/requestDevicesNeto
 
 * **Método HTTP:**
 
@@ -219,5 +219,5 @@ Retorna uma lista de relógios e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzY5NzE5ODBdfQ==
+eyJoaXN0b3J5IjpbLTIwMDg3MTg0Nl19
 -->
