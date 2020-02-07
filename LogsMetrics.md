@@ -2,10 +2,11 @@
 
 Coleção de métodos para consulta de logs e métricas dos recursos do contrato.
 
-- [Lista Relógios](Clocks.md#lista-rel%C3%B3gios)
-- [Novo Relógio](Clocks.md#novo-rel%C3%B3gio)
-- [Atualiza Relógio](Clocks.md#atualiza-rel%C3%B3gio)
-- [Deleta Relógio](Clocks.md#deleta-rel%C3%B3gio)
+- [Dados da Wifi](#)
+- [Logs de ](#)
+- [Novo Relógio](#)
+- [Atualiza Relógio](#)
+- [Deleta Relógio](#)
 ----
 <br/>
 
@@ -219,5 +220,5 @@ Retorna uma lista de relógios e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzI4NDYwMDddfQ==
+eyJoaXN0b3J5IjpbLTczNjM3ODMyMCwtMTA3Mjg0NjAwN119
 -->
