@@ -3,9 +3,9 @@
 Coleção de métodos para consulta de logs e métricas dos recursos do contrato.
 
 - [Dados da Wifi](#)
-- [Logs de ](#)
-- [Novo Relógio](#)
-- [Atualiza Relógio](#)
+- [Logs de Exibição de Mídias](#)
+- [Logs do Histórico de Terminais](#)
+- [Métricas para ](#)
 - [Deleta Relógio](#)
 ----
 <br/>
@@ -220,5 +220,6 @@ Retorna uma lista de relógios e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNjM3ODMyMCwtMTA3Mjg0NjAwN119
+eyJoaXN0b3J5IjpbLTE2MDc1MjUyMDIsLTEwNzI4NDYwMDddfQ
+==
 -->
