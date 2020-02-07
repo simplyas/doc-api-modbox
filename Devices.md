@@ -16,7 +16,7 @@ Retorna uma lista de dispositivos e suas configurações.
 
 * **URL**
 
-  {{api-url}}/requestDevicesNeto
+  {{api-url}}/requestDevicesNetworks
 
 * **Método HTTP:**
 
@@ -48,7 +48,7 @@ Retorna uma lista de dispositivos e suas configurações.
 	
 	````curl
 	curl --request POST \
-  --url 'http://{{api-url}}/requestClocks' \
+  --url 'http://{{api-url}}/requestDevicesNetworks' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
   --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}"}'
@@ -219,5 +219,5 @@ Retorna uma lista de dispositivos e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMTY4MTcyOV19
+eyJoaXN0b3J5IjpbMTYzNDAyOTAwMywtODAxNjgxNzI5XX0=
 -->
