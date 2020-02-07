@@ -85,7 +85,7 @@ Retorna uma lista de dispositivos e suas configurações.
 	| mac_address | Opcional | Mac address do device |
 	| groups | Obrigatório | Lista de localidades afetadas |
 	| expires | Opcional | Tempo de expiração do device |
-	| language | Opcional |  |
+	| validity_after_activation | Opcional |  Tempo de que o device fica disponível após ativação |
 
 * **Respostas:**
 	
@@ -219,5 +219,5 @@ Retorna uma lista de dispositivos e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NzUwMjE5OCwtODAxNjgxNzI5XX0=
+eyJoaXN0b3J5IjpbLTIxMzI1NjI5MzMsLTgwMTY4MTcyOV19
 -->
