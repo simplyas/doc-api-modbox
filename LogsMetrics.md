@@ -60,7 +60,7 @@ Retorna informações agrupadas de 30 dias.
   --url 'http://{{api-url}}/requestClocks' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}", "list_data_type":"{{list_data_type}}", "from_date":"{{from_date}}", "to_date":"{{to_date}}", "to_date":"{{list_data_type}}", "list_data_type":"{{list_data_type}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}", "list_data_type":"{{list_data_type}}", "from_date":"{{from_date}}", "to_date":"{{to_date}}", "groups":"{{groups}}"}'
   ````
 
 <br/>
@@ -228,7 +228,7 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNzQyNzYwMCwtMTkwNzc0MDQ0NCwtMT
+eyJoaXN0b3J5IjpbMTgxNTQ0MDkwMiwtMTkwNzc0MDQ0NCwtMT
 Y2MTM2NTY3OCwtNzE2NDE1MTU4LDY0NzkyOTc0MCwtMTA3Mjg0
 NjAwN119
 -->
