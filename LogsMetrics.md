@@ -34,8 +34,8 @@ Retorna logs dos dados de acesso da wifi.
 	| date_ini | Opcional | Data inicial |
 	| date_end | Opcional | Data final |
 	| group_token | Obrigatório | Token da Localidade |
-	| connection_type | Obrigatório | 0, 3 |
-	| group_token | Obrigatório | Token da Localidade |
+	| connection_type | Obrigatório | 0, 1, 2 ou 3 |
+	| network_type | Obrigatório | 0, 1 ou 2 |
 
 * **Respostas:**
 	
@@ -117,7 +117,7 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjU5MDQ2NjksLTIzMTE1MDA3OSwtMT
+eyJoaXN0b3J5IjpbLTE0NjQ3NzAzMjcsLTIzMTE1MDA3OSwtMT
 kwNzc0MDQ0NCwtMTY2MTM2NTY3OCwtNzE2NDE1MTU4LDY0Nzky
 OTc0MCwtMTA3Mjg0NjAwN119
 -->
