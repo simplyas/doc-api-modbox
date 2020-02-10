@@ -91,7 +91,7 @@ Retorna logs da exibição das mídias nos terminais.
 	
 	|Código| Resposta |
 	|--|--|
-	| 200 | ```{"logs": []}``` |
+	| 200 | ```{"medias":[], ""}``` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
 	| 400 | `{"error":"Informe as datas corretamente."}` |
@@ -209,8 +209,8 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1Mjg2OTUzNiwyMTA2NDMxMjIsLTQzNT
-k5MTI0NiwtMjA0NzAyOTgyLDIwNjk0MDc1ODEsLTIzMTE1MDA3
-OSwtMTkwNzc0MDQ0NCwtMTY2MTM2NTY3OCwtNzE2NDE1MTU4LD
-Y0NzkyOTc0MCwtMTA3Mjg0NjAwN119
+eyJoaXN0b3J5IjpbLTEyMzAzMDUzMzYsMjEwNjQzMTIyLC00Mz
+U5OTEyNDYsLTIwNDcwMjk4MiwyMDY5NDA3NTgxLC0yMzExNTAw
+NzksLTE5MDc3NDA0NDQsLTE2NjEzNjU2NzgsLTcxNjQxNTE1OC
+w2NDc5Mjk3NDAsLTEwNzI4NDYwMDddfQ==
 -->
