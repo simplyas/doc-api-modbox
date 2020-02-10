@@ -87,7 +87,7 @@ Retorna histórico de dados dos terminais.
 	
 	|Código| Resposta |
 	|--|--|
-	| 200 | ```[]``` |
+	| 200 | ```[{}]``` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
 	| 400 | `{"error":"Informe om token correto."}` |
@@ -159,8 +159,8 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNjY5MTM0OCwtNDM1OTkxMjQ2LC0yMD
-Q3MDI5ODIsMjA2OTQwNzU4MSwtMjMxMTUwMDc5LC0xOTA3NzQw
-NDQ0LC0xNjYxMzY1Njc4LC03MTY0MTUxNTgsNjQ3OTI5NzQwLC
-0xMDcyODQ2MDA3XX0=
+eyJoaXN0b3J5IjpbMjEwNjQzMTIyLC00MzU5OTEyNDYsLTIwND
+cwMjk4MiwyMDY5NDA3NTgxLC0yMzExNTAwNzksLTE5MDc3NDA0
+NDQsLTE2NjEzNjU2NzgsLTcxNjQxNTE1OCw2NDc5Mjk3NDAsLT
+EwNzI4NDYwMDddfQ==
 -->
