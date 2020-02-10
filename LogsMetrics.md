@@ -60,6 +60,8 @@ Retorna logs dos dados de acesso da wifi.
   ````
 <br/>
 
+
+
 ## Métricas do Wifi para Dashboard
 Retorna informações agrupadas de 30 dias.
 
@@ -112,8 +114,8 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNTk5MTI0NiwtMjA0NzAyOTgyLDIwNj
-k0MDc1ODEsLTIzMTE1MDA3OSwtMTkwNzc0MDQ0NCwtMTY2MTM2
-NTY3OCwtNzE2NDE1MTU4LDY0NzkyOTc0MCwtMTA3Mjg0NjAwN1
-19
+eyJoaXN0b3J5IjpbLTc0ODQwOTM4NiwtNDM1OTkxMjQ2LC0yMD
+Q3MDI5ODIsMjA2OTQwNzU4MSwtMjMxMTUwMDc5LC0xOTA3NzQw
+NDQ0LC0xNjYxMzY1Njc4LC03MTY0MTUxNTgsNjQ3OTI5NzQwLC
+0xMDcyODQ2MDA3XX0=
 -->
