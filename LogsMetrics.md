@@ -21,7 +21,7 @@ Retorna informações agrupadas de 30 dias.
 
 * **URL**
 
-  {{api-url}}/requestDataWifi
+  {{api-url}}/requestMetricsDashboard
 
 * **Método HTTP:**
 
@@ -37,6 +37,19 @@ Retorna informações agrupadas de 30 dias.
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
 	| user_token | Obrigatório | Token do usuário |
+	| list_data_type | Obrigatório | Token do usuário |
+	| user_token | Obrigatório | Token do usuário |
+	| user_token | Obrigatório | Token do usuário |
+	| user_token | Obrigatório | Token do usuário |
+
+list_data_type = njson.get('list_data_type', [])
+
+from_date = njson.get('from_date', '')
+
+to_date = njson.get('to_date', '')
+
+groups = njson.get('groups', [])
+
 
 * **Respostas:**
 	
@@ -224,6 +237,6 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU4MTEzOTQ3LC0xNjYxMzY1Njc4LC03MT
-Y0MTUxNTgsNjQ3OTI5NzQwLC0xMDcyODQ2MDA3XX0=
+eyJoaXN0b3J5IjpbMTc1NDQ3MDQ0NCwtMTY2MTM2NTY3OCwtNz
+E2NDE1MTU4LDY0NzkyOTc0MCwtMTA3Mjg0NjAwN119
 -->
