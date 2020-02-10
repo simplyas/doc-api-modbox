@@ -37,19 +37,10 @@ Retorna informações agrupadas de 30 dias.
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
 	| user_token | Obrigatório | Token do usuário |
-	| list_data_type | Obrigatório | Token do usuário |
-	| user_token | Obrigatório | Token do usuário |
-	| user_token | Obrigatório | Token do usuário |
-	| user_token | Obrigatório | Token do usuário |
-
-list_data_type = njson.get('list_data_type', [])
-
-from_date = njson.get('from_date', '')
-
-to_date = njson.get('to_date', '')
-
-groups = njson.get('groups', [])
-
+	| list_data_type | Obrigatório | Lista de retorno de dados |
+	| from_date | Opcional | Data inicial |
+	| to_date | Opcional | Data final |
+	| groups | Obrigatório | Lista de localidades |
 
 * **Respostas:**
 	
@@ -237,6 +228,6 @@ groups = njson.get('groups', [])
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NDQ3MDQ0NCwtMTY2MTM2NTY3OCwtNz
-E2NDE1MTU4LDY0NzkyOTc0MCwtMTA3Mjg0NjAwN119
+eyJoaXN0b3J5IjpbMjMwNzc1MDQxLC0xNjYxMzY1Njc4LC03MT
+Y0MTUxNTgsNjQ3OTI5NzQwLC0xMDcyODQ2MDA3XX0=
 -->
