@@ -44,6 +44,7 @@ Retorna logs dos dados de acesso da wifi.
 	| 200 | ```{"logs": []}``` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
+	| 400 | `{"error":"Informe as datas corretamente."}` |
 	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
@@ -55,7 +56,7 @@ Retorna logs dos dados de acesso da wifi.
   --url 'http://{{api-url}}/requestClocks' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}", "list_data_type":"{{list_data_type}}", "from_date":"{{from_date}}", "to_date":"{{to_date}}", "groups":"{{groups}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}", "date_ini":"{{date_ini}}", "from_date":"{{from_date}}", "to_date":"{{to_date}}", "groups":"{{groups}}"}'
   ````
 
 <br/>
@@ -117,7 +118,7 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjQ3NzAzMjcsLTIzMTE1MDA3OSwtMT
-kwNzc0MDQ0NCwtMTY2MTM2NTY3OCwtNzE2NDE1MTU4LDY0Nzky
-OTc0MCwtMTA3Mjg0NjAwN119
+eyJoaXN0b3J5IjpbLTg4NjQ2OTY1NywtMjMxMTUwMDc5LC0xOT
+A3NzQwNDQ0LC0xNjYxMzY1Njc4LC03MTY0MTUxNTgsNjQ3OTI5
+NzQwLC0xMDcyODQ2MDA3XX0=
 -->
