@@ -81,11 +81,6 @@ Retorna logs da exibição das mídias nos terminais.
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
 	| user_token | Obrigatório | Token do usuário |
-	| date_ini | Opcional | Data inicial |
-	| date_end | Opcional | Data final |
-	| group_token | Obrigatório | Token da Localidade |
-	| connection_type | Obrigatório | 0, 1, 2 ou 3 |
-	| network_type | Obrigatório | 0, 1 ou 2 |
 
 * **Respostas:**
 	
@@ -94,7 +89,6 @@ Retorna logs da exibição das mídias nos terminais.
 	| 200 | ```{"medias":[], "groups":[], "terminals":[]}``` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
-	| 400 | `{"error":"Informe as datas corretamente."}` |
 	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
@@ -209,8 +203,8 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNjQyNDU0MSwyMTA2NDMxMjIsLTQzNT
-k5MTI0NiwtMjA0NzAyOTgyLDIwNjk0MDc1ODEsLTIzMTE1MDA3
-OSwtMTkwNzc0MDQ0NCwtMTY2MTM2NTY3OCwtNzE2NDE1MTU4LD
-Y0NzkyOTc0MCwtMTA3Mjg0NjAwN119
+eyJoaXN0b3J5IjpbLTExMzQ1NzQ5NjAsMjEwNjQzMTIyLC00Mz
+U5OTEyNDYsLTIwNDcwMjk4MiwyMDY5NDA3NTgxLC0yMzExNTAw
+NzksLTE5MDc3NDA0NDQsLTE2NjEzNjU2NzgsLTcxNjQxNTE1OC
+w2NDc5Mjk3NDAsLTEwNzI4NDYwMDddfQ==
 -->
