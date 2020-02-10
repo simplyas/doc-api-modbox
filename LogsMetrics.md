@@ -53,7 +53,7 @@ Retorna logs dos dados de acesso da wifi.
 	
 	````curl
 	curl --request POST \
-  --url 'http://{{api-url}}/requestClocks' \
+  --url 'http://{{api-url}}/requestDataWifi' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
   --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}", "date_ini":"{{date_ini}}", "date_end":"{{date_end}}", "group_token":"{{group_token}}", "connection_type":"{{connection_type}}", "network_type":"{{network_type}}"}'
@@ -101,7 +101,7 @@ Retorna informações agrupadas de 30 dias.
 	
 	````curl
 	curl --request POST \
-  --url 'http://{{api-url}}/requestClocks' \
+  --url 'http://{{api-url}}/requestMetricsDashboard' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
   --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}", "list_data_type":"{{list_data_type}}", "from_date":"{{from_date}}", "to_date":"{{to_date}}", "groups":"{{groups}}"}'
@@ -112,7 +112,7 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MTQyMTcwOCwtMjA0NzAyOTgyLDIwNj
+eyJoaXN0b3J5IjpbLTQzNTk5MTI0NiwtMjA0NzAyOTgyLDIwNj
 k0MDc1ODEsLTIzMTE1MDA3OSwtMTkwNzc0MDQ0NCwtMTY2MTM2
 NTY3OCwtNzE2NDE1MTU4LDY0NzkyOTc0MCwtMTA3Mjg0NjAwN1
 19
