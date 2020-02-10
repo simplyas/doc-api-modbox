@@ -15,7 +15,7 @@ Retorna informações puras dos dados de acesso da wifi.
 
 * **URL**
 
-  {{api-url}}/-   requestDataWifi
+  {{api-url}}/requestDataWifi
 
 * **Método HTTP:**
 
@@ -116,7 +116,7 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzI4MzEyODIsLTE5MDc3NDA0NDQsLT
-E2NjEzNjU2NzgsLTcxNjQxNTE1OCw2NDc5Mjk3NDAsLTEwNzI4
-NDYwMDddfQ==
+eyJoaXN0b3J5IjpbLTIzMTE1MDA3OSwtMTkwNzc0MDQ0NCwtMT
+Y2MTM2NTY3OCwtNzE2NDE1MTU4LDY0NzkyOTc0MCwtMTA3Mjg0
+NjAwN119
 -->
