@@ -58,14 +58,7 @@ Retorna logs dos dados de acesso da wifi.
   --header 'Content-Type: application/json' \
   --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}", "date_ini":"{{date_ini}}", "date_end":"{{date_end}}", "group_token":"{{group_token}}", "connection_type":"{{connection_type}}", "network_type":"{{network_type}}"}'
   ````
-
 <br/>
-
-
-## Logs de Exibição de Mídias
-----
-## Logs do Histórico de Terminais
-----
 ## Métricas do Wifi para Dashboard
 Retorna informações agrupadas de 30 dias.
 
@@ -118,7 +111,7 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2OTQwNzU4MSwtMjMxMTUwMDc5LC0xOT
-A3NzQwNDQ0LC0xNjYxMzY1Njc4LC03MTY0MTUxNTgsNjQ3OTI5
-NzQwLC0xMDcyODQ2MDA3XX0=
+eyJoaXN0b3J5IjpbLTIwNDcwMjk4MiwyMDY5NDA3NTgxLC0yMz
+ExNTAwNzksLTE5MDc3NDA0NDQsLTE2NjEzNjU2NzgsLTcxNjQx
+NTE1OCw2NDc5Mjk3NDAsLTEwNzI4NDYwMDddfQ==
 -->
