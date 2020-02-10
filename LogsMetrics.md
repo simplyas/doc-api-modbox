@@ -100,7 +100,7 @@ Retorna logs da exibição das mídias nos terminais.
   --url 'http://{{api-url}}/requestMetricsFromLog' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}", "date_ini":"{{date_ini}}", "date_end":"{{date_end}}", "group_token":"{{group_token}}", "connection_type":"{{connection_type}}", "network_type":"{{network_type}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}"'
   ````
 <br/>
 
@@ -203,8 +203,8 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzQ1NzQ5NjAsMjEwNjQzMTIyLC00Mz
-U5OTEyNDYsLTIwNDcwMjk4MiwyMDY5NDA3NTgxLC0yMzExNTAw
-NzksLTE5MDc3NDA0NDQsLTE2NjEzNjU2NzgsLTcxNjQxNTE1OC
-w2NDc5Mjk3NDAsLTEwNzI4NDYwMDddfQ==
+eyJoaXN0b3J5IjpbLTUxNTI1Mjg4NSwyMTA2NDMxMjIsLTQzNT
+k5MTI0NiwtMjA0NzAyOTgyLDIwNjk0MDc1ODEsLTIzMTE1MDA3
+OSwtMTkwNzc0MDQ0NCwtMTY2MTM2NTY3OCwtNzE2NDE1MTU4LD
+Y0NzkyOTc0MCwtMTA3Mjg0NjAwN119
 -->
