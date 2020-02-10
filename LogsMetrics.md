@@ -11,7 +11,7 @@ Coleção de métodos para consulta de logs e métricas dos recursos do contrato
 <br/>
 
 ## Logs de Dados da Wifi
-Retorna informações puras dos dados de acesso da wifi.
+Retorna logs dos dados de acesso da wifi.
 
 * **URL**
 
@@ -40,7 +40,7 @@ Retorna informações puras dos dados de acesso da wifi.
 	
 	|Código| Resposta |
 	|--|--|
-	| 200 | ```{"wifi": []}``` |
+	| 200 | ```{"logs": []}``` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
 	| 403 | `{"error":"Sem permissão ao recurso."}` |
@@ -116,7 +116,7 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg5NDQyMDM5LC0yMzExNTAwNzksLTE5MD
+eyJoaXN0b3J5IjpbMTcyODU2Njk5LC0yMzExNTAwNzksLTE5MD
 c3NDA0NDQsLTE2NjEzNjU2NzgsLTcxNjQxNTE1OCw2NDc5Mjk3
 NDAsLTEwNzI4NDYwMDddfQ==
 -->
