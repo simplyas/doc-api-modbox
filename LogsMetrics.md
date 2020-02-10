@@ -31,10 +31,11 @@ Retorna logs dos dados de acesso da wifi.
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
 	| user_token | Obrigatório | Token do usuário |
-	| list_data_type | Obrigatório | ["devices_online","wifi_totaldevices", 'wifi_hour', 'wifi_differentdays', 'unique_connections', 'reconnections', 'wifi_phonestoday', 'top10_users'] |
-	| from_date | Opcional | Data inicial |
-	| to_date | Opcional | Data final |
-	| groups | Obrigatório | Lista de localidades |
+	| date_ini | Opcional | Data inicial |
+	| date_end | Opcional | Data final |
+	| group_token | Obrigatório | Token da Localidade |
+	| connection_type | Obrigatório | 0, 3 |
+	| group_token | Obrigatório | Token da Localidade |
 
 * **Respostas:**
 	
@@ -116,7 +117,7 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyODU2Njk5LC0yMzExNTAwNzksLTE5MD
-c3NDA0NDQsLTE2NjEzNjU2NzgsLTcxNjQxNTE1OCw2NDc5Mjk3
-NDAsLTEwNzI4NDYwMDddfQ==
+eyJoaXN0b3J5IjpbLTE1MjU5MDQ2NjksLTIzMTE1MDA3OSwtMT
+kwNzc0MDQ0NCwtMTY2MTM2NTY3OCwtNzE2NDE1MTU4LDY0Nzky
+OTc0MCwtMTA3Mjg0NjAwN119
 -->
