@@ -60,6 +60,51 @@ Retorna logs dos dados de acesso da wifi.
   ````
 <br/>
 
+## Logs do Histórico de Terminais
+Retorna histórico de dados dos terminais.
+
+* **URL**
+
+  {{api-url}}/requestMetricsTerminal
+
+* **Método HTTP:**
+
+  `POST`
+  
+*  **Parâmetros na URL**
+
+   Nada 
+
+* **Parâmetros**
+
+	| Parâmetro | Recurso | Observação |
+	|--|--|--|
+	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
+	| terminal_token | Obrigatório | Token do Terminal |
+
+* **Respostas:**
+	
+	|Código| Resposta |
+	|--|--|
+	| 200 | ```{"logs": []}``` |
+	| 400 | `{"error":"Verifique o JSON enviado."}` |
+	| 400 | `{"error":"Informe um hash correto."}` |
+	| 400 | `{"error":"Informe as datas corretamente."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
+	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
+
+* **Exemplo:**
+	
+	````curl
+	curl --request POST \
+  --url 'http://{{api-url}}/requestMetricsTerminal' \
+  --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
+  --header 'Content-Type: application/json' \
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}", "date_ini":"{{date_ini}}", "date_end":"{{date_end}}", "group_token":"{{group_token}}", "connection_type":"{{connection_type}}", "network_type":"{{network_type}}"}'
+  ````
+<br/>
 
 
 ## Métricas do Wifi para Dashboard
@@ -114,7 +159,7 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0ODQwOTM4NiwtNDM1OTkxMjQ2LC0yMD
+eyJoaXN0b3J5IjpbLTUyMjE1MjA1OCwtNDM1OTkxMjQ2LC0yMD
 Q3MDI5ODIsMjA2OTQwNzU4MSwtMjMxMTUwMDc5LC0xOTA3NzQw
 NDQ0LC0xNjYxMzY1Njc4LC03MTY0MTUxNTgsNjQ3OTI5NzQwLC
 0xMDcyODQ2MDA3XX0=
