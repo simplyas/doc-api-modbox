@@ -5,7 +5,7 @@ Coleção de métodos para consulta de logs e métricas dos recursos do contrato
 - [Logs de Acessos da Wifi](#)
 - [Logs de Exibição de Mídias](#)
 - [Logs do Histórico de Terminais](#)
-- [Métricas de Acessos do Wifi para Dashboard](#)
+- [Métricas do Wifi para Dashboard](#)
 
 ----
 <br/>
@@ -17,13 +17,11 @@ Coleção de métodos para consulta de logs e métricas dos recursos do contrato
 ## Logs do Histórico de Terminais
 ----
 ## Métricas do Wifi para Dashboard
-----
-
-Retorna uma lista de relógios e suas configurações.
+Retorna informações agrupadas de 30 dias.
 
 * **URL**
 
-  {{api-url}}/requestClocks
+  {{api-url}}/requestDataWifi
 
 * **Método HTTP:**
 
@@ -226,6 +224,6 @@ Retorna uma lista de relógios e suas configurações.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjEzNjU2NzgsLTcxNjQxNTE1OCw2ND
-c5Mjk3NDAsLTEwNzI4NDYwMDddfQ==
+eyJoaXN0b3J5IjpbMjU4MTEzOTQ3LC0xNjYxMzY1Njc4LC03MT
+Y0MTUxNTgsNjQ3OTI5NzQwLC0xMDcyODQ2MDA3XX0=
 -->
