@@ -59,6 +59,7 @@ Retorna logs dos dados de acesso da wifi.
   --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}", "date_ini":"{{date_ini}}", "date_end":"{{date_end}}", "group_token":"{{group_token}}", "connection_type":"{{connection_type}}", "network_type":"{{network_type}}"}'
   ````
 <br/>
+
 ## Métricas do Wifi para Dashboard
 Retorna informações agrupadas de 30 dias.
 
@@ -111,7 +112,8 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDcwMjk4MiwyMDY5NDA3NTgxLC0yMz
-ExNTAwNzksLTE5MDc3NDA0NDQsLTE2NjEzNjU2NzgsLTcxNjQx
-NTE1OCw2NDc5Mjk3NDAsLTEwNzI4NDYwMDddfQ==
+eyJoaXN0b3J5IjpbMTI3MTQyMTcwOCwtMjA0NzAyOTgyLDIwNj
+k0MDc1ODEsLTIzMTE1MDA3OSwtMTkwNzc0MDQ0NCwtMTY2MTM2
+NTY3OCwtNzE2NDE1MTU4LDY0NzkyOTc0MCwtMTA3Mjg0NjAwN1
+19
 -->
