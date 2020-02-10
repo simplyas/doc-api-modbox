@@ -87,10 +87,10 @@ Retorna histórico de dados dos terminais.
 	
 	|Código| Resposta |
 	|--|--|
-	| 200 | ```{"logs": []}``` |
+	| 200 | ```[]``` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
-	| 400 | `{"error":"Informe as datas corretamente."}` |
+	| 400 | `{"error":"Informe om token correto."}` |
 	| 403 | `{"error":"Sem permissão ao recurso."}` |
 	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
 	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
@@ -102,7 +102,7 @@ Retorna histórico de dados dos terminais.
   --url 'http://{{api-url}}/requestMetricsTerminal' \
   --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
   --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}", "date_ini":"{{date_ini}}", "date_end":"{{date_end}}", "group_token":"{{group_token}}", "connection_type":"{{connection_type}}", "network_type":"{{network_type}}"}'
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}", "terminal_token":"{{terminal_token}}"}'
   ````
 <br/>
 
@@ -159,7 +159,7 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMjE1MjA1OCwtNDM1OTkxMjQ2LC0yMD
+eyJoaXN0b3J5IjpbMTIwNjY5MTM0OCwtNDM1OTkxMjQ2LC0yMD
 Q3MDI5ODIsMjA2OTQwNzU4MSwtMjMxMTUwMDc5LC0xOTA3NzQw
 NDQ0LC0xNjYxMzY1Njc4LC03MTY0MTUxNTgsNjQ3OTI5NzQwLC
 0xMDcyODQ2MDA3XX0=
