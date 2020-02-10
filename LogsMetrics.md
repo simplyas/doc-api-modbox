@@ -37,7 +37,7 @@ Retorna informações agrupadas de 30 dias.
 	|--|--|--|
 	| contract_hash | Obrigatório | Hash do contrato |
 	| user_token | Obrigatório | Token do usuário |
-	| list_data_type | Obrigatório | Lista de retorno de dados |
+	| list_data_type | Obrigatório | ['devices_online', 'wifi_totaldevices', 'wifi_hour', ''] |
 	| from_date | Opcional | Data inicial |
 	| to_date | Opcional | Data final |
 	| groups | Obrigatório | Lista de localidades |
@@ -228,6 +228,6 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMwNzc1MDQxLC0xNjYxMzY1Njc4LC03MT
-Y0MTUxNTgsNjQ3OTI5NzQwLC0xMDcyODQ2MDA3XX0=
+eyJoaXN0b3J5IjpbLTE5ODg4MzIxMDIsLTE2NjEzNjU2NzgsLT
+cxNjQxNTE1OCw2NDc5Mjk3NDAsLTEwNzI4NDYwMDddfQ==
 -->
