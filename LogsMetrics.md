@@ -60,6 +60,56 @@ Retorna logs dos dados de acesso da wifi.
   ````
 <br/>
 
+## Logs de Exibição de Mídias
+Retorna logs da exibição das mídias nos terminais.
+
+* **URL**
+
+  {{api-url}}/requestMetricsFromLog
+
+* **Método HTTP:**
+
+  `POST`
+  
+*  **Parâmetros na URL**
+
+   Nada 
+
+* **Parâmetros**
+
+	| Parâmetro | Recurso | Observação |
+	|--|--|--|
+	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
+	| date_ini | Opcional | Data inicial |
+	| date_end | Opcional | Data final |
+	| group_token | Obrigatório | Token da Localidade |
+	| connection_type | Obrigatório | 0, 1, 2 ou 3 |
+	| network_type | Obrigatório | 0, 1 ou 2 |
+
+* **Respostas:**
+	
+	|Código| Resposta |
+	|--|--|
+	| 200 | ```{"logs": []}``` |
+	| 400 | `{"error":"Verifique o JSON enviado."}` |
+	| 400 | `{"error":"Informe um hash correto."}` |
+	| 400 | `{"error":"Informe as datas corretamente."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
+	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
+
+* **Exemplo:**
+	
+	````curl
+	curl --request POST \
+  --url 'http://{{api-url}}/requestMetricsFromLog' \
+  --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
+  --header 'Content-Type: application/json' \
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}", "date_ini":"{{date_ini}}", "date_end":"{{date_end}}", "group_token":"{{group_token}}", "connection_type":"{{connection_type}}", "network_type":"{{network_type}}"}'
+  ````
+<br/>
+
 ## Logs do Histórico de Terminais
 Retorna histórico de dados dos terminais.
 
@@ -159,8 +209,8 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNjQzMTIyLC00MzU5OTEyNDYsLTIwND
-cwMjk4MiwyMDY5NDA3NTgxLC0yMzExNTAwNzksLTE5MDc3NDA0
-NDQsLTE2NjEzNjU2NzgsLTcxNjQxNTE1OCw2NDc5Mjk3NDAsLT
-EwNzI4NDYwMDddfQ==
+eyJoaXN0b3J5IjpbMjA1Mjg2OTUzNiwyMTA2NDMxMjIsLTQzNT
+k5MTI0NiwtMjA0NzAyOTgyLDIwNjk0MDc1ODEsLTIzMTE1MDA3
+OSwtMTkwNzc0MDQ0NCwtMTY2MTM2NTY3OCwtNzE2NDE1MTU4LD
+Y0NzkyOTc0MCwtMTA3Mjg0NjAwN119
 -->
