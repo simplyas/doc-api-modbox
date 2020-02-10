@@ -40,7 +40,7 @@ Retorna informações puras dos dados de acesso da wifi.
 	
 	|Código| Resposta |
 	|--|--|
-	| 200 | ```{"clocks": [{"label": "CLOCK 1000","background_color": "1D1D1D","font_color": "FFFFFF","transparent": "False","screen_area": "0 90 20 100","screen_layer": "3","clock_token": "81c66760-d944-d695-3d1f-4dcab406606e"}]}``` |
+	| 200 | ```{"wifi": []}``` |
 	| 400 | `{"error":"Verifique o JSON enviado."}` |
 	| 400 | `{"error":"Informe um hash correto."}` |
 	| 403 | `{"error":"Sem permissão ao recurso."}` |
@@ -116,7 +116,7 @@ Retorna informações agrupadas de 30 dias.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODQyOTUwNzEsLTIzMTE1MDA3OSwtMT
-kwNzc0MDQ0NCwtMTY2MTM2NTY3OCwtNzE2NDE1MTU4LDY0Nzky
-OTc0MCwtMTA3Mjg0NjAwN119
+eyJoaXN0b3J5IjpbMzg5NDQyMDM5LC0yMzExNTAwNzksLTE5MD
+c3NDA0NDQsLTE2NjEzNjU2NzgsLTcxNjQxNTE1OCw2NDc5Mjk3
+NDAsLTEwNzI4NDYwMDddfQ==
 -->
