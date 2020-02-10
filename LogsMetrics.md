@@ -2,7 +2,7 @@
 
 Coleção de métodos para consulta de logs e métricas dos recursos do contrato.
 
-- [Logs de Acessos da Wifi](#)
+- [Logs de Dados da Wifi](#)
 - [Logs de Exibição de Mídias](#)
 - [Logs do Histórico de Terminais](#)
 - [Métricas do Wifi para Dashboard](#)
@@ -10,8 +10,56 @@ Coleção de métodos para consulta de logs e métricas dos recursos do contrato
 ----
 <br/>
 
-## Logs de Acessos da Wifi
-----
+## Logs de Dados da Wifi
+Retorna informações puras dos dados de acesso da wifi.
+
+* **URL**
+
+  {{api-url}}/-   requestDataWifi
+
+* **Método HTTP:**
+
+  `POST`
+  
+*  **Parâmetros na URL**
+
+   Nada 
+
+* **Parâmetros**
+
+	| Parâmetro | Recurso | Observação |
+	|--|--|--|
+	| contract_hash | Obrigatório | Hash do contrato |
+	| user_token | Obrigatório | Token do usuário |
+	| list_data_type | Obrigatório | ["devices_online","wifi_totaldevices", 'wifi_hour', 'wifi_differentdays', 'unique_connections', 'reconnections', 'wifi_phonestoday', 'top10_users'] |
+	| from_date | Opcional | Data inicial |
+	| to_date | Opcional | Data final |
+	| groups | Obrigatório | Lista de localidades |
+
+* **Respostas:**
+	
+	|Código| Resposta |
+	|--|--|
+	| 200 | ```{"clocks": [{"label": "CLOCK 1000","background_color": "1D1D1D","font_color": "FFFFFF","transparent": "False","screen_area": "0 90 20 100","screen_layer": "3","clock_token": "81c66760-d944-d695-3d1f-4dcab406606e"}]}``` |
+	| 400 | `{"error":"Verifique o JSON enviado."}` |
+	| 400 | `{"error":"Informe um hash correto."}` |
+	| 403 | `{"error":"Sem permissão ao recurso."}` |
+	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
+	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
+
+* **Exemplo:**
+	
+	````curl
+	curl --request POST \
+  --url 'http://{{api-url}}/requestClocks' \
+  --header 'Authorization: Basic bW9kYm94XYIuMDowRTk2QTRCNQ==' \
+  --header 'Content-Type: application/json' \
+  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}", "list_data_type":"{{list_data_type}}", "from_date":"{{from_date}}", "to_date":"{{to_date}}", "groups":"{{groups}}"}'
+  ````
+
+<br/>
+
+
 ## Logs de Exibição de Mídias
 ----
 ## Logs do Histórico de Terminais
@@ -66,169 +114,9 @@ Retorna informações agrupadas de 30 dias.
 <br/>
 
 
-**Novo Relógio**
-----
- Recebe requisição contendo a hash do contrato e propriedades para cadastrar novo relógio.
-
-* **URL**
-
-  {{api-url}}/submitClock
-
-* **Método HTTP:**
-
-  `POST`
-  
-*  **Parâmetros na URL**
-
-   Nada 
-
-* **Parâmetros**
-
-	| Parâmetro | Recurso | Observação |
-	|--|--|--|
-	| contract_hash | Obrigatório | Hash do contrato |
-	| user_token | Obrigatório | Token do usuário |
-	| label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |
-	| background_color | Opcional | Formato de cor hexadecimal. Ex: "1D1D1D" |
-	| font_color | Opcional | Formato de cor hexadecimal. Ex: "FFFFFF" |
-	| transparent | Opcional | "True"/"False" |
-	| screen_area | Opcional | Ex: "0 90 20 100" |
-	| screen_layer | Opcional | Valor numérico. Ex: "3" |
-	| language | Opcional |  |
-
-* **Respostas:**
-	
-	|Código| Resposta |
-	|--|--|
-	| 200 | `{"message":"Ajustes aplicados com sucesso!"}` |
-	| 400 | `{"error":"Informe uma hash correta."}` 
-	| 400 | `{"error":"Verifique o JSON enviado."}` |
-	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
-	| 403 | `{"error":"Sem permissão ao recurso."}` |
-	| 400 | `{"error":"Informe o label com 1 a 32 caracteres."}` |
-	| 404 | `{"error":"Nenhum contrato encontrado."}`|
-	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
-
-* **Exemplo:**
-	
-	````curl
-	curl --request POST \
-  --url 'http://{{api-url}}/submitClock' \
-  --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
-  --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","label":"{{label}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","language":"{{language}}"}'
-  ````
-
-<br/>
-
-**Atualiza Relógio**
-----
- Recebe requisição contendo a hash do contrato, token e propriedades para atualizar um relógio.
-
-* **URL**
-
-  {{api-url}}/updateClock
-
-* **Método HTTP:**
-
-  `POST`
-  
-*  **Parâmetros na URL**
-
-   Nada 
-
-* **Parâmetros**
-
-	| Parâmetro | Recurso | Observação |
-	|--|--|--|
-	| contract_hash | Obrigatório | Hash do contrato |
-	| user_token | Obrigatório | Token do usuário |
-	| clock_token | Obrigatório | Token do relógio |
-	| label | Obrigatório | Identificação do recurso com no mínimo 1 e máximo 32 caracteres |
-	| background_color | Opcional | Formato de cor hexadecimal. Ex: "1D1D1D" |
-	| font_color | Opcional | Formato de cor hexadecimal. Ex: "FFFFFF" |
-	| transparent | Opcional | "True"/"False" |
-	| screen_area | Opcional | Ex: "0 90 20 100" |
-	| screen_layer | Opcional | Valor numérico. Ex: "3" |
-	| language | Opcional |  |
-
-* **Respostas:**
-	
-	|Código| Resposta |
-	|--|--|
-	| 200 | `{"message":"Ajustes aplicados com sucesso!"}` |
-	| 400 | `{"error":"Informe uma hash correta."}` 
-	| 400 | `{"error":"Verifique o JSON enviado."}` |
-	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
-	| 403 | `{"error":"Sem permissão ao recurso."}` |
-	| 400 | `{"error":"Informe o label com 1 a 32 caracteres."}` |
-	| 404 | `{"error":"Nenhum contrato encontrado."}`|
-	| 404 | `{"error":"Nenhum token encontrado."}`|
-	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
-
-* **Exemplo:**
-	
-	````curl
-	curl --request POST \
-  --url 'http://{{api-url}}/updateClock' \
-  --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
-  --header 'Content-Type: application/json' \
-  --data '{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","clock_token":"{{clock_token}}","label":"{{label}}","background_color":"{{background_color}}","font_color":"{{font_color}}","transparent":"{{transparent}}","screen_area":"{{screen_area}}","screen_layer":"{{screen_layer}}","language":"{{language}}"}'
-  ````
-
-
-<br/>
-
-**Deleta Relógio**
-----
-  Recebe requisição contendo a hash do contrato e o token da relógio para exclusão.
-
-* **URL**
-
-  {{api-url}}/deleteClock
-
-* **Método HTTP:**
-
-  `POST`
-  
-*  **Parâmetros na URL**
-
-   Nada 
-
-* **Parâmetros**
-
-	| Parâmetro | Recurso | Observação |
-	|--|--|--|
-	| contract_hash | Obrigatório | Hash do contrato |
-	| user_token | Obrigatório | Token do usuário |
-	| clock_token | Obrigatório | Token do relógio |
-	
-* **Respostas:**
-	
-	|Código| Resposta |
-	|--|--|
-	| 200 | `{"message":"Ajustes aplicados com sucesso!"}` |
-	| 400 | `{"error":"Verifique o JSON enviado."}` |
-	| 400 | `{"error":"Verifique os parâmetros enviados."}` |
-	| 403 | `{"error":"Sem permissão ao recurso."}` |
-	| 402 | `{"error":"Nenhum contrato encontrado."}`|
-	| 402 | `{"error":"Nenhum token encontrade."}`|
-	| 500 | `{"error":"Algo deu errado. Tente novamente."}` |
-
-* **Exemplo:**
-	
-	````curl
-	curl --request POST \
-  --url 'http://{{api-url}}/deleteClock' \
-  --header 'Authorization: Basic bW9kYm94LTIuMDowRTk2QTRCNQ==' \
-  --header 'Content-Type: application/json' \
-  --data '{{"contract_hash":"{{contract_hash}}", "user_token":"{{user_token}}","clock_token":"{{clock_token}}"'
-  ````
-
-
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNTQ0MDkwMiwtMTkwNzc0MDQ0NCwtMT
-Y2MTM2NTY3OCwtNzE2NDE1MTU4LDY0NzkyOTc0MCwtMTA3Mjg0
-NjAwN119
+eyJoaXN0b3J5IjpbLTIxMzI4MzEyODIsLTE5MDc3NDA0NDQsLT
+E2NjEzNjU2NzgsLTcxNjQxNTE1OCw2NDc5Mjk3NDAsLTEwNzI4
+NDYwMDddfQ==
 -->
