@@ -2,7 +2,7 @@
 
 Primeiramente queremos agradecê-lo pelo interesse no **modbox**. Saiba que fazemos tudo com muita atenção e carinho, buscamos sempre compartilhar todo o nosso conhecimento para que juntos possamos ampliar cada vez mais os poderes desta plataforma incrível! ♥
 
-Caso precise de ajuda, encontre algum bug, ou teve uma ideia legal, estaremos ansiosos para atende-lo através do site  [http://simplyas.com/modbox](http://simplyas.com/modbox). URL da documentação da API: [https://github.com/simplyas](https://github.com/simplyas).
+Caso precise de ajuda, encontre algum bug, ou teve uma ideia legal, estaremos ansiosos para atende-lo através do site  [http://simplyas.com/modbox](http://simplyas.com/modbox). URL da documentação da API: [https://github.com/simplyas/doc-api-modbox/blob/master/README.md](https://github.com/simplyas/doc-api-modbox/blob/master/README.md).
 
 Algumas informações antes de começarmos.
 
